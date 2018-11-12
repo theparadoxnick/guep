@@ -1,0 +1,36 @@
+//-------------
+// Intro
+//-------------
+
+.intro {
+    & {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       height: 100vh;
+    }
+
+    &.-is-disabled {
+        display: none;
+    }
+}
+
+.intro__list {
+    & {
+        text-align: center;
+    }
+}
+
+.intro__logo {
+    & {
+        max-width: 120px;
+        margin-bottom: 100px;
+    }
+}
+
+.intro__start {
+    & {
+        @include game-button;
+    }
+}

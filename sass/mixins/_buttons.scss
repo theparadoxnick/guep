@@ -1,0 +1,69 @@
+//-----------------------
+//  GUEP Game Buttons
+//-----------------------
+
+
+@mixin game-button {
+    & {
+        width: 100%;
+        max-width: 200px;
+        line-height: 60px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        transition: .2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+        margin-bottom: 20px;
+
+        &.--yellow {
+            border: 2px solid $g-yellow;
+            color: $g-yellow;
+        }
+
+        &.--purple {
+            border: 2px solid $g-purple;
+            color: $g-purple;
+        }
+
+        &.--blue {
+            border: 2px solid $g-blue;
+            color: $g-blue;
+        }
+
+        &.--red {
+            border: 2px solid $g-red;
+            color: $g-red;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+        
+        & {
+            transition: .2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+            color: white;
+        }
+
+        &.--yellow {
+            background-color: $g-yellow;
+        }
+
+        &.--purple {
+            background-color: $g-purple;
+        }
+
+        &.--blue {
+            background-color: $g-blue;
+        }
+
+        &.--red {
+            background-color: $g-red;
+        }
+    }
+}

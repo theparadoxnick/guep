@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 @media (min-width: 640px) {
   /* # */
 }
@@ -209,13 +210,86 @@ th {
   text-align: left;
 }
 
-/* line 9, ../../sass/blocks/_land.scss */
-.canvas {
-  display: block;
+/* line 6, ../../sass/blocks/_intro.scss */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../assets/img/land.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+}
+/* line 14, ../../sass/blocks/_intro.scss */
+.intro.-is-disabled {
+  display: none;
+}
+
+/* line 20, ../../sass/blocks/_intro.scss */
+.intro__list {
+  text-align: center;
+}
+
+/* line 26, ../../sass/blocks/_intro.scss */
+.intro__logo {
+  max-width: 120px;
+  margin-bottom: 100px;
+}
+
+/* line 7, ../../sass/mixins/_buttons.scss */
+.intro__start {
+  width: 100%;
+  max-width: 200px;
+  line-height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  margin-bottom: 20px;
+}
+/* line 20, ../../sass/mixins/_buttons.scss */
+.intro__start.--yellow {
+  border: 2px solid #ef9920;
+  color: #ef9920;
+}
+/* line 25, ../../sass/mixins/_buttons.scss */
+.intro__start.--purple {
+  border: 2px solid #49619d;
+  color: #49619d;
+}
+/* line 30, ../../sass/mixins/_buttons.scss */
+.intro__start.--blue {
+  border: 2px solid #308fc8;
+  color: #308fc8;
+}
+/* line 35, ../../sass/mixins/_buttons.scss */
+.intro__start.--red {
+  border: 2px solid #d04322;
+  color: #d04322;
+}
+/* line 41, ../../sass/mixins/_buttons.scss */
+.intro__start:last-child {
+  margin-bottom: 0;
+}
+/* line 48, ../../sass/mixins/_buttons.scss */
+.intro__start:hover, .intro__start:focus {
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  color: white;
+}
+/* line 53, ../../sass/mixins/_buttons.scss */
+.intro__start:hover.--yellow, .intro__start:focus.--yellow {
+  background-color: #ef9920;
+}
+/* line 57, ../../sass/mixins/_buttons.scss */
+.intro__start:hover.--purple, .intro__start:focus.--purple {
+  background-color: #49619d;
+}
+/* line 61, ../../sass/mixins/_buttons.scss */
+.intro__start:hover.--blue, .intro__start:focus.--blue {
+  background-color: #308fc8;
+}
+/* line 65, ../../sass/mixins/_buttons.scss */
+.intro__start:hover.--red, .intro__start:focus.--red {
+  background-color: #d04322;
 }
