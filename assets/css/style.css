@@ -210,6 +210,70 @@ th {
   text-align: left;
 }
 
+/* line 5, ../../sass/blocks/_scene.scss */
+.game {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* line 12, ../../sass/blocks/_scene.scss */
+.game__scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: auto;
+  max-width: inherit;
+  transition: 5s left;
+}
+
+/* line 23, ../../sass/blocks/_scene.scss */
+.game.--step1 .game__scene {
+  left: -500px;
+}
+
+/* line 27, ../../sass/blocks/_scene.scss */
+.game.--step2 .game__scene {
+  left: -1000px;
+}
+
+/* line 31, ../../sass/blocks/_scene.scss */
+.game.--step3 .game__scene {
+  left: -1500px;
+}
+
+/* line 35, ../../sass/blocks/_scene.scss */
+.game.--step3 .game__scene {
+  left: -2000px;
+}
+
+/* line 39, ../../sass/blocks/_scene.scss */
+.game.--step4 .game__scene {
+  left: -2500px;
+}
+
+/* line 43, ../../sass/blocks/_scene.scss */
+.game.--step5 .game__scene {
+  left: -3000px;
+}
+
+/* line 47, ../../sass/blocks/_scene.scss */
+.game.--step6 .game__scene {
+  left: -3500px;
+}
+
+/* line 51, ../../sass/blocks/_scene.scss */
+.game.--step7 .game__scene {
+  left: -4000px;
+}
+
+/* line 55, ../../sass/blocks/_scene.scss */
+.game.--step8 .game__scene {
+  left: -4500px;
+}
+
 /* line 6, ../../sass/blocks/_intro.scss */
 .intro {
   display: flex;
@@ -291,5 +355,100 @@ th {
 }
 /* line 65, ../../sass/mixins/_buttons.scss */
 .intro__start:hover.--red, .intro__start:focus.--red {
+  background-color: #d04322;
+}
+
+/* line 6, ../../sass/blocks/_truck.scss */
+.game__truck {
+  position: absolute;
+  bottom: 16.5vh;
+  left: -12vw;
+  z-index: -1;
+  width: 12vw;
+  height: auto;
+  transition: 5s left;
+}
+
+/* line 20, ../../sass/blocks/_truck.scss */
+.game.--start .game__truck {
+  left: 38vw;
+  z-index: 1;
+}
+
+/* line 26, ../../sass/blocks/_truck.scss */
+.game.--walking .game__truck {
+  left: 38vw;
+  z-index: 1;
+}
+
+/* line 32, ../../sass/blocks/_truck.scss */
+.game.--end .game__truck {
+  left: 112vw;
+  z-index: 1;
+}
+
+/* line 4, ../../sass/blocks/_controllers.scss */
+.game__next-step {
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+}
+/* line 7, ../../sass/mixins/_buttons.scss */
+.game__next-step {
+  width: 100%;
+  max-width: 200px;
+  line-height: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  margin-bottom: 20px;
+}
+/* line 20, ../../sass/mixins/_buttons.scss */
+.game__next-step.--yellow {
+  border: 2px solid #ef9920;
+  color: #ef9920;
+}
+/* line 25, ../../sass/mixins/_buttons.scss */
+.game__next-step.--purple {
+  border: 2px solid #49619d;
+  color: #49619d;
+}
+/* line 30, ../../sass/mixins/_buttons.scss */
+.game__next-step.--blue {
+  border: 2px solid #308fc8;
+  color: #308fc8;
+}
+/* line 35, ../../sass/mixins/_buttons.scss */
+.game__next-step.--red {
+  border: 2px solid #d04322;
+  color: #d04322;
+}
+/* line 41, ../../sass/mixins/_buttons.scss */
+.game__next-step:last-child {
+  margin-bottom: 0;
+}
+/* line 48, ../../sass/mixins/_buttons.scss */
+.game__next-step:hover, .game__next-step:focus {
+  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  color: white;
+}
+/* line 53, ../../sass/mixins/_buttons.scss */
+.game__next-step:hover.--yellow, .game__next-step:focus.--yellow {
+  background-color: #ef9920;
+}
+/* line 57, ../../sass/mixins/_buttons.scss */
+.game__next-step:hover.--purple, .game__next-step:focus.--purple {
+  background-color: #49619d;
+}
+/* line 61, ../../sass/mixins/_buttons.scss */
+.game__next-step:hover.--blue, .game__next-step:focus.--blue {
+  background-color: #308fc8;
+}
+/* line 65, ../../sass/mixins/_buttons.scss */
+.game__next-step:hover.--red, .game__next-step:focus.--red {
   background-color: #d04322;
 }

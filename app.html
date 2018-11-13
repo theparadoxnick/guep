@@ -9,17 +9,19 @@
     <title>Caminhão GUEP</title>
 </head>
 <body>
-    <section class="intro -is-disabled">
+    <section class="intro">
         <div class="intro__list">
             <img class="intro__logo" src="assets/img/guep-logo.png" alt="Logo da GUEP">
             <button class="intro__start --red">Iniciar</button>
+            <!-- <h2></h2> -->
+            <button class="intro__restart --purple">Reiniciar</button>
         </div>
 	</section>
 
-	<section class="game -is-enabled">
-
-		<div class="game__truck"></div>
-	
+	<section class="game"> <!--| --start --walking --end |-->
+        <img class="game__scene" src="assets/img/scene.jpg" alt="Cenário">
+        <img class="game__truck" src="assets/img/truck-smoke.png" alt="Caminhão">
+        <button class="game__next-step">Próxima Etapa</button>
 	</section>
 
 	<script src="assets/js/jquery-1.12.0.min.js"></script>

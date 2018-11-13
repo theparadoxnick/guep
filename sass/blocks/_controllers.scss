@@ -1,0 +1,10 @@
+
+
+.game__next-step {
+    & {
+        @include game-button;
+        position: absolute;
+        right: 5vw;
+        bottom: 5vh;
+    }
+}

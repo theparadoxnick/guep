@@ -1,0 +1,36 @@
+//---------------
+// Caminhão GUEP
+//---------------
+
+.game__truck {
+    & {
+        position: absolute;
+        bottom: 16.5vh;
+        left: -12vw;
+        z-index: -1;
+        width: 12vw;
+        height: auto;
+        transition: 5s left;
+    }
+}
+
+
+
+.game.--start .game__truck {
+    & {
+        left: 38vw;
+        z-index: 1;
+    }
+}
+.game.--walking .game__truck {
+    & {
+        left: 38vw;
+        z-index: 1;
+    }
+}
+.game.--end .game__truck {
+    & {
+        left: 112vw;
+        z-index: 1;
+    }
+}

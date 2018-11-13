@@ -1,0 +1,57 @@
+//---------------------
+// Section Scene
+//---------------------
+
+.game {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.game__scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    max-width: inherit;
+    transition: 5s left;
+}
+
+
+.game.--step1 .game__scene {
+    left: -500px;
+}
+
+.game.--step2 .game__scene {
+    left: -1000px;
+}
+
+.game.--step3 .game__scene {
+    left: -1500px;
+}
+
+.game.--step3 .game__scene {
+    left: -2000px;
+}
+
+.game.--step4 .game__scene {
+    left: -2500px;
+}
+
+.game.--step5 .game__scene {
+    left: -3000px;
+}
+
+.game.--step6 .game__scene {
+    left: -3500px;
+}
+
+.game.--step7 .game__scene {
+    left: -4000px;
+}
+
+.game.--step8 .game__scene {
+    left: -4500px;
+}
