@@ -10,9 +10,10 @@ jQuery( function() {
 
     btn_start.on( 'click' , function () {
         
+        game.addClass( '--start' );
         intro.addClass( '-is-disabled' );
         game.addClass( '-is-active' );
-        game.addClass( '--start' );
+
         return false;
     });
 
@@ -22,12 +23,14 @@ jQuery( function() {
 
     btn_next.on('click', function() {
         
-        if (counter>7){
+        if (counter > 7 ){
 
             game.removeClass( '--start' ).addClass( '--end' );
             
             setTimeout( function() {
+
                 game.removeClass( '--step8' ).removeClass( '--end' );
+                
             }, 5000 );
             
             counter = 0;

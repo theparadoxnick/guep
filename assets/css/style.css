@@ -367,7 +367,7 @@ th {
 /* line 6, ../../sass/blocks/_truck.scss */
 .game__truck {
   position: absolute;
-  bottom: 16.5vh;
+  bottom: 16vh;
   left: -12vw;
   z-index: -1;
   width: 12vw;
@@ -377,17 +377,18 @@ th {
 
 /* line 18, ../../sass/blocks/_truck.scss */
 .game.--start .game__truck {
-  left: 38vw;
+  transition: 5s left;
+  left: 8vw;
   z-index: 1;
 }
 
-/* line 25, ../../sass/blocks/_truck.scss */
+/* line 26, ../../sass/blocks/_truck.scss */
 .game.--walking .game__truck {
   left: 38vw;
   z-index: 1;
 }
 
-/* line 32, ../../sass/blocks/_truck.scss */
+/* line 33, ../../sass/blocks/_truck.scss */
 .game.--end .game__truck {
   left: 112vw;
   z-index: 1;

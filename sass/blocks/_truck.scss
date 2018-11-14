@@ -5,7 +5,7 @@
 .game__truck {
     & {
         position: absolute;
-        bottom: 16.5vh;
+        bottom: 16vh;
         left: -12vw;
         z-index: -1;
         width: 12vw;
@@ -16,7 +16,8 @@
 
 .game.--start .game__truck {
     & {
-        left: 38vw;
+        transition: 5s left;
+        left: 8vw;
         z-index: 1;
     }
 }
