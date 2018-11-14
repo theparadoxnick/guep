@@ -369,13 +369,13 @@ th {
   transition: 5s left;
 }
 
-/* line 20, ../../sass/blocks/_truck.scss */
+/* line 18, ../../sass/blocks/_truck.scss */
 .game.--start .game__truck {
   left: 38vw;
   z-index: 1;
 }
 
-/* line 26, ../../sass/blocks/_truck.scss */
+/* line 25, ../../sass/blocks/_truck.scss */
 .game.--walking .game__truck {
   left: 38vw;
   z-index: 1;
