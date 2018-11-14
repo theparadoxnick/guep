@@ -11,6 +11,7 @@ jQuery( function() {
     btn_start.on( 'click' , function () {
         
         intro.addClass( '-is-disabled' );
+        game.addClass( '-is-active' );
         game.addClass( '--start' );
         return false;
     });
