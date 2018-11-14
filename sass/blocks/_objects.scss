@@ -1,0 +1,14 @@
+//-------------------------
+// Objetos de Cena
+//-------------------------
+
+
+.game__woods {
+    & {
+        position: absolute;
+        bottom: 16.5vh;
+        width: 12vw;
+        height: auto;
+        transition: 5s left;
+    }
+}

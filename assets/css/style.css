@@ -452,3 +452,12 @@ th {
 .game__next-step:hover.--red, .game__next-step:focus.--red {
   background-color: #d04322;
 }
+
+/* line 7, ../../sass/blocks/_objects.scss */
+.game__woods {
+  position: absolute;
+  bottom: 16.5vh;
+  width: 12vw;
+  height: auto;
+  transition: 5s left;
+}
