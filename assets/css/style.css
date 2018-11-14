@@ -227,49 +227,50 @@ th {
   width: auto;
   max-width: inherit;
   transition: 5s left;
+  z-index: -1;
 }
 
-/* line 23, ../../sass/blocks/_scene.scss */
+/* line 24, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__scene {
   left: -500px;
 }
 
-/* line 27, ../../sass/blocks/_scene.scss */
+/* line 28, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__scene {
   left: -1000px;
 }
 
-/* line 31, ../../sass/blocks/_scene.scss */
+/* line 32, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -1500px;
 }
 
-/* line 35, ../../sass/blocks/_scene.scss */
+/* line 36, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -2000px;
 }
 
-/* line 39, ../../sass/blocks/_scene.scss */
+/* line 40, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__scene {
   left: -2500px;
 }
 
-/* line 43, ../../sass/blocks/_scene.scss */
+/* line 44, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__scene {
   left: -3000px;
 }
 
-/* line 47, ../../sass/blocks/_scene.scss */
+/* line 48, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__scene {
   left: -3500px;
 }
 
-/* line 51, ../../sass/blocks/_scene.scss */
+/* line 52, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__scene {
   left: -4000px;
 }
 
-/* line 55, ../../sass/blocks/_scene.scss */
+/* line 56, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__scene {
   left: -4500px;
 }
@@ -453,11 +454,13 @@ th {
   background-color: #d04322;
 }
 
-/* line 7, ../../sass/blocks/_objects.scss */
+/* line 6, ../../sass/blocks/_objects.scss */
 .game__woods {
-  position: absolute;
-  bottom: 16.5vh;
-  width: 12vw;
+  width: 23vw;
   height: auto;
+  margin-left: 873px;
+  position: relative;
   transition: 5s left;
+  margin-top: 605px;
+  z-index: 2;
 }
