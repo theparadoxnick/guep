@@ -461,11 +461,10 @@ th {
 
 /* line 6, ../../sass/blocks/_objects.scss */
 .game__woods {
-  width: 23vw;
+  width: 22vw;
   height: auto;
-  margin-left: 873px;
-  position: relative;
+  margin-left: 66vw;
   transition: 5s left;
-  margin-top: 605px;
+  margin-top: 68vh;
   z-index: 2;
 }
