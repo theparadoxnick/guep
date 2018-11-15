@@ -216,9 +216,10 @@ th {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* line 17, ../../sass/blocks/_scene.scss */
+/* line 18, ../../sass/blocks/_scene.scss */
 .game__scene {
   position: absolute;
   top: 0;
@@ -230,47 +231,47 @@ th {
   z-index: -1;
 }
 
-/* line 30, ../../sass/blocks/_scene.scss */
+/* line 31, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__scene {
   left: -500px;
 }
 
-/* line 34, ../../sass/blocks/_scene.scss */
+/* line 35, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__scene {
   left: -1000px;
 }
 
-/* line 38, ../../sass/blocks/_scene.scss */
+/* line 39, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -1500px;
 }
 
-/* line 42, ../../sass/blocks/_scene.scss */
+/* line 43, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -2000px;
 }
 
-/* line 46, ../../sass/blocks/_scene.scss */
+/* line 47, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__scene {
   left: -2500px;
 }
 
-/* line 50, ../../sass/blocks/_scene.scss */
+/* line 51, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__scene {
   left: -3000px;
 }
 
-/* line 54, ../../sass/blocks/_scene.scss */
+/* line 55, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__scene {
   left: -3500px;
 }
 
-/* line 58, ../../sass/blocks/_scene.scss */
+/* line 59, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__scene {
   left: -4000px;
 }
 
-/* line 62, ../../sass/blocks/_scene.scss */
+/* line 63, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__scene {
   left: -4500px;
 }
