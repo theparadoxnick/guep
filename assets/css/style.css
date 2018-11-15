@@ -372,33 +372,25 @@ th {
 
 /* line 18, ../../sass/blocks/_truck.scss */
 .game__wheels {
-  position: relative;
+  position: absolute;
+  top: 78.3vh;
+  left: 9.9vw;
+  z-index: -1;
   margin-left: -20vw;
   transition: 5s margin;
 }
 
-/* line 27, ../../sass/blocks/_truck.scss */
+/* line 30, ../../sass/blocks/_truck.scss */
 .truck__wheel {
   width: 1.5vw;
   height: auto;
-  position: absolute;
-  z-index: 1;
-  top: 78.5vh;
   transition: 2 s animation;
 }
-/* line 38, ../../sass/blocks/_truck.scss */
-.truck__wheel.--a {
-  left: 10vw;
+/* line 36, ../../sass/blocks/_truck.scss */
+.truck__wheel.--b {
+  margin-right: 3.4vw;
 }
 /* line 42, ../../sass/blocks/_truck.scss */
-.truck__wheel.--b {
-  left: 11.7vw;
-}
-/* line 46, ../../sass/blocks/_truck.scss */
-.truck__wheel.--c {
-  left: 16.9vw;
-}
-/* line 52, ../../sass/blocks/_truck.scss */
 .truck__wheel.--driving {
   transition: 2s animation;
   animation: spin 2s linear infinite;
@@ -411,25 +403,25 @@ th {
     transform: rotate(360deg);
   }
 }
-/* line 66, ../../sass/blocks/_truck.scss */
+/* line 56, ../../sass/blocks/_truck.scss */
 .game.--start .game__truck {
   left: 8vw;
   z-index: 1;
 }
 
-/* line 73, ../../sass/blocks/_truck.scss */
+/* line 63, ../../sass/blocks/_truck.scss */
 .game.--walking .game__truck {
   left: 38vw;
   z-index: 1;
 }
 
-/* line 80, ../../sass/blocks/_truck.scss */
+/* line 70, ../../sass/blocks/_truck.scss */
 .game.--end .game__truck {
   left: 112vw;
   z-index: 1;
 }
 
-/* line 87, ../../sass/blocks/_truck.scss */
+/* line 77, ../../sass/blocks/_truck.scss */
 .game.--start .game__wheels {
   margin-left: 0;
 }

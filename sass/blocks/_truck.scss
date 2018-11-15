@@ -16,7 +16,10 @@
 
 .game__wheels {
     & {
-        position: relative;
+        position: absolute;
+        top: 78.3vh;
+        left: 9.9vw;
+        z-index: -1;
         margin-left: -20vw;
         transition: 5s margin;
     }
@@ -27,24 +30,11 @@
     & {
         width: 1.5vw;
         height: auto;
-        position: absolute;
-        z-index: 1;
-        top: 78.5vh;
         transition: 2 s animation;
-    }
-    
-    // Posição das Rodas
-
-    &.--a {
-        left: 10vw;
     }
 
     &.--b {
-        left: 11.7vw;        
-    }
-
-    &.--c {
-        left: 16.9vw;        
+        margin-right: 3.4vw;
     }
 
     // Animação das Rodas
