@@ -14,20 +14,51 @@
     }
 }
 
-
-.truck__wheels {
-    width: 20px;
-    height: 20px;
-    animation: spin 2s linear infinite;
-    position: absolute;
-    top: 474px;
-    left: 123px;
-    z-index: 1;
-  
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+.game__wheels {
+    & {
+        position: relative;
+        margin-left: -20vw;
+        transition: 5s margin;
     }
+}
+
+.truck__wheel {
+    
+    & {
+        width: 1.5vw;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        top: 78.5vh;
+        transition: 2 s animation;
+    }
+    
+    // Posição das Rodas
+
+    &.--a {
+        left: 10vw;
+    }
+
+    &.--b {
+        left: 11.7vw;        
+    }
+
+    &.--c {
+        left: 16.9vw;        
+    }
+
+    // Animação das Rodas
+
+    &.--driving {
+        transition: 2s animation;        
+        animation: spin 2s linear infinite;
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    }
+
 }
 
 
@@ -49,5 +80,11 @@
     & {
         left: 112vw;
         z-index: 1;
+    }
+}
+
+.game.--start .game__wheels {
+    & {
+        margin-left: 0;
     }
 }

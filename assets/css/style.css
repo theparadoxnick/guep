@@ -210,7 +210,7 @@ th {
   text-align: left;
 }
 
-/* line 5, ../../sass/blocks/_scene.scss */
+/* line 7, ../../sass/blocks/_scene.scss */
 .game {
   position: relative;
   height: 100vh;
@@ -218,7 +218,7 @@ th {
   overflow: hidden;
 }
 
-/* line 12, ../../sass/blocks/_scene.scss */
+/* line 17, ../../sass/blocks/_scene.scss */
 .game__scene {
   position: absolute;
   top: 0;
@@ -230,47 +230,47 @@ th {
   z-index: -1;
 }
 
-/* line 24, ../../sass/blocks/_scene.scss */
+/* line 30, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__scene {
   left: -500px;
 }
 
-/* line 28, ../../sass/blocks/_scene.scss */
+/* line 34, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__scene {
   left: -1000px;
 }
 
-/* line 32, ../../sass/blocks/_scene.scss */
+/* line 38, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -1500px;
 }
 
-/* line 36, ../../sass/blocks/_scene.scss */
+/* line 42, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -2000px;
 }
 
-/* line 40, ../../sass/blocks/_scene.scss */
+/* line 46, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__scene {
   left: -2500px;
 }
 
-/* line 44, ../../sass/blocks/_scene.scss */
+/* line 50, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__scene {
   left: -3000px;
 }
 
-/* line 48, ../../sass/blocks/_scene.scss */
+/* line 54, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__scene {
   left: -3500px;
 }
 
-/* line 52, ../../sass/blocks/_scene.scss */
+/* line 58, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__scene {
   left: -4000px;
 }
 
-/* line 56, ../../sass/blocks/_scene.scss */
+/* line 62, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__scene {
   left: -4500px;
 }
@@ -371,14 +371,37 @@ th {
 }
 
 /* line 18, ../../sass/blocks/_truck.scss */
-.truck__wheels {
-  width: 20px;
-  height: 20px;
-  animation: spin 2s linear infinite;
+.game__wheels {
+  position: relative;
+  margin-left: -20vw;
+  transition: 5s margin;
+}
+
+/* line 27, ../../sass/blocks/_truck.scss */
+.truck__wheel {
+  width: 1.5vw;
+  height: auto;
   position: absolute;
-  top: 474px;
-  left: 123px;
   z-index: 1;
+  top: 78.5vh;
+  transition: 2 s animation;
+}
+/* line 38, ../../sass/blocks/_truck.scss */
+.truck__wheel.--a {
+  left: 10vw;
+}
+/* line 42, ../../sass/blocks/_truck.scss */
+.truck__wheel.--b {
+  left: 11.7vw;
+}
+/* line 46, ../../sass/blocks/_truck.scss */
+.truck__wheel.--c {
+  left: 16.9vw;
+}
+/* line 52, ../../sass/blocks/_truck.scss */
+.truck__wheel.--driving {
+  transition: 2s animation;
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
   0% {
@@ -388,22 +411,27 @@ th {
     transform: rotate(360deg);
   }
 }
-/* line 35, ../../sass/blocks/_truck.scss */
+/* line 66, ../../sass/blocks/_truck.scss */
 .game.--start .game__truck {
   left: 8vw;
   z-index: 1;
 }
 
-/* line 42, ../../sass/blocks/_truck.scss */
+/* line 73, ../../sass/blocks/_truck.scss */
 .game.--walking .game__truck {
   left: 38vw;
   z-index: 1;
 }
 
-/* line 49, ../../sass/blocks/_truck.scss */
+/* line 80, ../../sass/blocks/_truck.scss */
 .game.--end .game__truck {
   left: 112vw;
   z-index: 1;
+}
+
+/* line 87, ../../sass/blocks/_truck.scss */
+.game.--start .game__wheels {
+  margin-left: 0;
 }
 
 /* line 4, ../../sass/blocks/_controllers.scss */

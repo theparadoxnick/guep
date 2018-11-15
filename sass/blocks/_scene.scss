@@ -3,21 +3,27 @@
 //---------------------
 
 .game {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    
+    & {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
 }
 
 .game__scene {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: auto;
-    max-width: inherit;
-    transition: 5s left;
-    z-index: -1;
+    
+    & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: auto;
+        max-width: inherit;
+        transition: 5s left;
+        z-index: -1;
+    }
 }
 
 
