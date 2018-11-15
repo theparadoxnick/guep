@@ -10,9 +10,14 @@ jQuery( function() {
 
     btn_start.on( 'click' , function () {
         
-        game.addClass( '--start' );
+        game.addClass( '--start' ).addClass( '-is-active' ).addClass( '--driving' );
         intro.addClass( '-is-disabled' );
-        game.addClass( '-is-active' );
+
+        setTimeout( function() {
+
+            game.removeClass( '--driving' );
+            
+        }, 5000 );
 
         return false;
     });
@@ -22,35 +27,54 @@ jQuery( function() {
         btn_next = jQuery( '.game__next-step' );
 
     btn_next.on('click', function() {
-        
-        if (counter > 7 ){
 
-            game.removeClass( '--start' ).addClass( '--end' );
-            
-            setTimeout( function() {
-
-                game.removeClass( '--step8' ).removeClass( '--end' );
-                
-            }, 5000 );
-            
-            counter = 0;
-
+        if (game.hasClass('--driving')) {
+            return false;
         } else {
 
-            if (counter > 0) {
-                game.removeClass( '--' + steps[counter - 1]);
-                game.addClass( '--' + steps[counter]);
-                counter++;
+            if (counter > 7 ){
+                game.addClass( '--driving' );
+                game.removeClass( '--start' ).addClass( '--end' );
+                
+                setTimeout( function() {
+    
+                    game.removeClass( '--step8' ).removeClass( '--end' ).removeClass( '--driving' );
+                    
+                }, 5000 );
+                
+                counter = 0;
+    
             } else {
-                game.addClass( '--' + steps[counter]);
-                counter++;
+    
+                if (counter > 0) {
+                    game.addClass ( '--driving' );
+                    game.removeClass( '--' + steps[counter - 1]);
+                    game.addClass( '--' + steps[counter]);
+                    counter++;
+    
+                    setTimeout( function() {
+    
+                        game.removeClass( '--driving' );
+                        
+                    }, 5000 );
+    
+                } else {
+                    game.addClass ( '--driving' );
+                    game.addClass( '--' + steps[counter]);
+                    counter++;
+    
+                    setTimeout( function() {
+    
+                        game.removeClass( '--driving' );
+                        
+                    }, 5000 );
+    
+                }
+                
+                return false;
             }
-            
-            return false;
-
         }
         
     });
     
-
 });

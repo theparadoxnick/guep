@@ -27,39 +27,99 @@
     }
 }
 
-
-.game.--step1 .game__scene {
-    left: -500px;
+.game__mountain {
+    width: 45vw;
+    position: absolute;
+    bottom: 14vh;
+    z-index: 2;
+    transition: 5s left;
+    left: 1205px;
 }
 
-.game.--step2 .game__scene {
-    left: -1000px;
+.game.--step1 {
+    
+    .game__scene {
+        left: -500px;
+    }
+    
+    .game__mountain {
+        left: 705px;
+    }
 }
 
-.game.--step3 .game__scene {
-    left: -1500px;
+.game.--step2 {
+    
+    .game__scene {
+        left: -1000px;
+    }
+    
+    .game__mountain {
+        left: 205px;
+    }
+} 
+
+.game.--step3 {
+    
+    .game__scene {
+        left: -1500px;
+    }
+    
+    .game__mountain {
+        left: -295px;
+    }
 }
 
-.game.--step3 .game__scene {
-    left: -2000px;
+.game.--step4 {
+    
+    .game__scene {
+        left: -2000px;
+    }
+    
+    .game__mountain {
+        left: -795px;
+    }
+} 
+
+.game.--step5 {
+    
+    .game__scene {
+        left: -2500px;
+    }
+    
+    .game__mountain {
+        left: -1295px;
+    }
 }
 
-.game.--step4 .game__scene {
-    left: -2500px;
+.game.--step6 {
+    
+    .game__scene {
+        left: -3000px;
+    }
+    
+    .game__mountain {
+        left: -1795px;
+    }
 }
 
-.game.--step5 .game__scene {
-    left: -3000px;
+.game.--step7 {
+    
+    .game__scene {
+        left: -3500px;
+    }
+    
+    .game__mountain {
+        left: -2295px;
+    }
 }
 
-.game.--step6 .game__scene {
-    left: -3500px;
-}
-
-.game.--step7 .game__scene {
-    left: -4000px;
-}
-
-.game.--step8 .game__scene {
-    left: -4500px;
+.game.--step8 {
+    
+    .game__scene {
+        left: -4000px;
+    }
+    
+    .game__mountain {
+        left: -2795px;
+    }
 }

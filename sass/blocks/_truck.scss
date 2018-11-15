@@ -14,14 +14,19 @@
     }
 }
 
+.game__structure {
+    position: relative;
+    margin-bottom: -1.4vh;
+    width: 12vw;
+}
+
 .game__wheels {
     & {
-        position: absolute;
-        top: 78.3vh;
-        left: 9.9vw;
+        position: relative;
         z-index: -1;
-        margin-left: -20vw;
-        transition: 5s margin;
+        width: 12vw;
+        height: auto;
+        margin-left: 2.1vw;
     }
 }
 
@@ -30,16 +35,17 @@
     & {
         width: 1.5vw;
         height: auto;
-        transition: 2 s animation;
+        transition: 2s animation;
     }
 
     &.--b {
         margin-right: 3.4vw;
     }
+}
 
-    // Animação das Rodas
+.game.--driving .truck__wheel {
 
-    &.--driving {
+    & {
         transition: 2s animation;        
         animation: spin 2s linear infinite;
 
@@ -48,9 +54,7 @@
             100% { transform: rotate(360deg); }
         }
     }
-
 }
-
 
 .game.--start .game__truck {
     & {
@@ -59,22 +63,9 @@
     }
 }
 
-.game.--walking .game__truck {
-    & {
-        left: 38vw;
-        z-index: 1;
-    }
-}
-
 .game.--end .game__truck {
     & {
         left: 112vw;
         z-index: 1;
-    }
-}
-
-.game.--start .game__wheels {
-    & {
-        margin-left: 0;
     }
 }
