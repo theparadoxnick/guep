@@ -5,48 +5,80 @@
 .game__truck {
     & {
         position: absolute;
-        bottom: 18vh;
+        bottom: 22.8vh;
         left: -12vw;
         z-index: -1;
         width: 12vw;
         height: auto;
-        will-change: left;
+        will-change: transition;
         transition: 5s left;
     }
 }
 
-.game__structure {
-    position: relative;
-    margin-bottom: -2vh;
-    width: 12vw;
-}
-
-.game__wheels {
-    & {
-        position: relative;
-        z-index: -1;
-        width: 12vw;
-        height: auto;
-        margin-left: 2vw;
+.truck__animation--a,
+.truck__animation--b {
+    
+    &::before,
+    &::after {
+        content: ' ';
+        position: absolute;
+        top: 4vw;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: repeat;
+        width: 1.8vw;
+        height: 3.5vh;
+        will-change: transition;
+        transition: 2s animation;
     }
 }
 
-.truck__wheel {
+
+.truck__animation--a {
+        
+    &::after {
+        left: 8.7vw;
+        background-image: url('../../assets/img/truck-wheel.png');
+        transition: 2s animation;
+    }
+}
+
+.truck__animation--b {
     
-    & {
-        width: 1.5vw;
-        height: auto;
+    &::after,
+    &::before {
+        background-image: url('../../assets/img/truck-wheel.png');
+        transition: 2s animation;
+    } 
+
+    &::after {
+        left: 3.6vw;
         transition: 2s animation;
     }
 
-    &.--b {
-        margin-right: 3.4vw;
+    &::before {
+        left: 1.7vw;
+        transition: 2s animation;
     }
 }
 
-.game.--driving .truck__wheel {
-
+.truck__structure {
     & {
+        display: block;
+        position: relative;
+        margin-bottom: -2vh;
+        width: 12vw;
+        z-index: 1;
+    }
+}
+
+
+.game.--driving .truck__animation--a,
+.game.--driving .truck__animation--b {
+
+    &::after,
+    &::before {
+        will-change: transition;
         transition: 2s animation;        
         animation: spin 2s linear infinite;
 
