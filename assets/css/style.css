@@ -471,69 +471,12 @@ th {
 
 /* line 4, ../../sass/blocks/_controllers.scss */
 .game__next-step {
-  position: absolute;
-  right: 5vw;
-  bottom: 5vh;
-  z-index: 3;
-}
-/* line 7, ../../sass/mixins/_buttons.scss */
-.game__next-step {
-  width: 100%;
-  max-width: 200px;
-  line-height: 60px;
+  max-width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: transparent;
-  font-weight: 600;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  margin-bottom: 20px;
-}
-/* line 20, ../../sass/mixins/_buttons.scss */
-.game__next-step.--yellow {
-  border: 2px solid #ef9920;
-  color: #ef9920;
-}
-/* line 25, ../../sass/mixins/_buttons.scss */
-.game__next-step.--purple {
-  border: 2px solid #49619d;
-  color: #49619d;
-}
-/* line 30, ../../sass/mixins/_buttons.scss */
-.game__next-step.--blue {
-  border: 2px solid #308fc8;
-  color: #308fc8;
-}
-/* line 35, ../../sass/mixins/_buttons.scss */
-.game__next-step.--red {
-  border: 2px solid #d04322;
-  color: #d04322;
-}
-/* line 41, ../../sass/mixins/_buttons.scss */
-.game__next-step:last-child {
-  margin-bottom: 0;
-}
-/* line 48, ../../sass/mixins/_buttons.scss */
-.game__next-step:hover, .game__next-step:focus {
-  transition: 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  color: white;
-}
-/* line 53, ../../sass/mixins/_buttons.scss */
-.game__next-step:hover.--yellow, .game__next-step:focus.--yellow {
-  background-color: #ef9920;
-}
-/* line 57, ../../sass/mixins/_buttons.scss */
-.game__next-step:hover.--purple, .game__next-step:focus.--purple {
-  background-color: #49619d;
-}
-/* line 61, ../../sass/mixins/_buttons.scss */
-.game__next-step:hover.--blue, .game__next-step:focus.--blue {
-  background-color: #308fc8;
-}
-/* line 65, ../../sass/mixins/_buttons.scss */
-.game__next-step:hover.--red, .game__next-step:focus.--red {
-  background-color: #d04322;
+  border: none;
+  outline: none;
 }
 
 /* line 6, ../../sass/blocks/_objects.scss */
