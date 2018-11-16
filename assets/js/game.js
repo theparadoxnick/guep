@@ -10,7 +10,7 @@ jQuery( function() {
 
     btn_start.on( 'click' , function () {
         
-        game.addClass( '--start' ).addClass( '-is-active' ).addClass( '--driving' );
+        game.addClass( '--start' ).addClass( '-is-active' ).addClass( '--driving' ).removeClass( '-is-disabled' );
         intro.addClass( '-is-disabled' );
 
         setTimeout( function() {

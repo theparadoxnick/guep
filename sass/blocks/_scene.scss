@@ -12,6 +12,12 @@
         z-index: 1;
         background-color: black;
     }
+
+    &.-is-disabled {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
 }
 
 .game__scene {
