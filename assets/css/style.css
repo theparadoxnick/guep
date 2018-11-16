@@ -217,7 +217,7 @@ th {
   width: 100vw;
   overflow: hidden;
   z-index: 1;
-  background-color: black;
+  background: #c2ffff;
 }
 /* line 16, ../../sass/blocks/_scene.scss */
 .game.-is-disabled {
