@@ -10,6 +10,7 @@
         width: 100vw;
         overflow: hidden;
         z-index: 1;
+        background-color: black;
     }
 }
 
@@ -28,12 +29,15 @@
 }
 
 .game__mountain {
-    width: 45vw;
-    position: absolute;
-    bottom: 14vh;
-    z-index: 2;
-    transition: 5s left;
-    left: 2301px;
+    & {
+        width: 45vw;
+        height: auto;
+        position: absolute;
+        bottom: 14vh;
+        z-index: 2;
+        transition: 5s left;
+        left: 2301px;
+    }
 }
 
 .game.--step1 {

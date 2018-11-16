@@ -217,9 +217,10 @@ th {
   width: 100vw;
   overflow: hidden;
   z-index: 1;
+  background-color: black;
 }
 
-/* line 18, ../../sass/blocks/_scene.scss */
+/* line 19, ../../sass/blocks/_scene.scss */
 .game__scene {
   position: absolute;
   top: 0;
@@ -231,9 +232,10 @@ th {
   z-index: -1;
 }
 
-/* line 30, ../../sass/blocks/_scene.scss */
+/* line 32, ../../sass/blocks/_scene.scss */
 .game__mountain {
   width: 45vw;
+  height: auto;
   position: absolute;
   bottom: 14vh;
   z-index: 2;
@@ -241,74 +243,74 @@ th {
   left: 2301px;
 }
 
-/* line 41, ../../sass/blocks/_scene.scss */
+/* line 45, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__scene {
   left: -500px;
 }
-/* line 45, ../../sass/blocks/_scene.scss */
+/* line 49, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__mountain {
   left: 1752px;
 }
 
-/* line 52, ../../sass/blocks/_scene.scss */
+/* line 56, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__scene {
   left: -1000px;
 }
-/* line 56, ../../sass/blocks/_scene.scss */
+/* line 60, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__mountain {
   left: 1252px;
 }
 
-/* line 63, ../../sass/blocks/_scene.scss */
+/* line 67, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -1500px;
 }
-/* line 67, ../../sass/blocks/_scene.scss */
+/* line 71, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__mountain {
   left: 752px;
 }
 
-/* line 74, ../../sass/blocks/_scene.scss */
+/* line 78, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__scene {
   left: -2000px;
 }
-/* line 78, ../../sass/blocks/_scene.scss */
+/* line 82, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__mountain {
   left: 252px;
 }
 
-/* line 85, ../../sass/blocks/_scene.scss */
+/* line 89, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__scene {
   left: -2500px;
 }
-/* line 89, ../../sass/blocks/_scene.scss */
+/* line 93, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__mountain {
   left: -248px;
 }
 
-/* line 96, ../../sass/blocks/_scene.scss */
+/* line 100, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__scene {
   left: -3000px;
 }
-/* line 100, ../../sass/blocks/_scene.scss */
+/* line 104, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__mountain {
   left: -748px;
 }
 
-/* line 107, ../../sass/blocks/_scene.scss */
+/* line 111, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__scene {
   left: -3500px;
 }
-/* line 111, ../../sass/blocks/_scene.scss */
+/* line 115, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__mountain {
   left: -1248px;
 }
 
-/* line 118, ../../sass/blocks/_scene.scss */
+/* line 122, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__scene {
   left: -4000px;
 }
-/* line 122, ../../sass/blocks/_scene.scss */
+/* line 126, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__mountain {
   left: -1748px;
 }
@@ -405,17 +407,18 @@ th {
   z-index: -1;
   width: 12vw;
   height: auto;
+  will-change: left;
   transition: 5s left;
 }
 
-/* line 17, ../../sass/blocks/_truck.scss */
+/* line 18, ../../sass/blocks/_truck.scss */
 .game__structure {
   position: relative;
   margin-bottom: -1.4vh;
   width: 12vw;
 }
 
-/* line 24, ../../sass/blocks/_truck.scss */
+/* line 25, ../../sass/blocks/_truck.scss */
 .game__wheels {
   position: relative;
   z-index: -1;
@@ -424,18 +427,18 @@ th {
   margin-left: 2.1vw;
 }
 
-/* line 35, ../../sass/blocks/_truck.scss */
+/* line 36, ../../sass/blocks/_truck.scss */
 .truck__wheel {
   width: 1.5vw;
   height: auto;
   transition: 2s animation;
 }
-/* line 41, ../../sass/blocks/_truck.scss */
+/* line 42, ../../sass/blocks/_truck.scss */
 .truck__wheel.--b {
   margin-right: 3.4vw;
 }
 
-/* line 48, ../../sass/blocks/_truck.scss */
+/* line 49, ../../sass/blocks/_truck.scss */
 .game.--driving .truck__wheel {
   transition: 2s animation;
   animation: spin 2s linear infinite;
@@ -448,13 +451,13 @@ th {
     transform: rotate(360deg);
   }
 }
-/* line 60, ../../sass/blocks/_truck.scss */
+/* line 61, ../../sass/blocks/_truck.scss */
 .game.--start .game__truck {
   left: 8vw;
   z-index: 1;
 }
 
-/* line 67, ../../sass/blocks/_truck.scss */
+/* line 68, ../../sass/blocks/_truck.scss */
 .game.--end .game__truck {
   left: 112vw;
   z-index: 1;
