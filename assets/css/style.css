@@ -287,11 +287,11 @@ p {
 .game.--step1 .game__truck {
   left: 34vw;
 }
-/* line 100, ../../sass/blocks/_scene.scss */
+/* line 96, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__mountain {
   left: 1752px;
 }
-/* line 105, ../../sass/blocks/_scene.scss */
+/* line 101, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__quote {
   display: block;
 }
@@ -305,8 +305,7 @@ p {
   white-space: nowrap;
   margin: 0 auto;
   text-transform: uppercase;
-  border-right: 4px solid #135176;
-  animation: typing 3.5s steps(200, end), typing-cursor 1s step-end infinite;
+  animation: typing 3.5s steps(200, end);
 }
 @keyframes typing {
   from {
@@ -316,24 +315,15 @@ p {
     width: 100%;
   }
 }
-@keyframes typing-cursor {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #135176;
-  }
-}
-/* line 113, ../../sass/blocks/_scene.scss */
+/* line 109, ../../sass/blocks/_scene.scss */
 .game.--step1 .game__truck:after {
   content: '';
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: url("../../assets/img/hand-check.png");
   display: block;
   position: absolute;
-  bottom: 2vh;
+  background-image: url("../../assets/img/hand-cpf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 4.8vh;
   left: 9vw;
   animation: interation 5s ease-in;
   animation-fill-mode: forwards;
@@ -348,21 +338,20 @@ p {
     height: 8vw;
   }
 }
-/* line 145, ../../sass/blocks/_scene.scss */
+/* line 139, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__scene {
   left: -1000px;
 }
-/* line 149, ../../sass/blocks/_scene.scss */
+/* line 143, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__mountain {
   left: 1252px;
 }
-/* line 155, ../../sass/blocks/_scene.scss */
+/* line 149, ../../sass/blocks/_scene.scss */
 .game.--step2 .game__truck:after {
   content: '';
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../../assets/img/hand-check.png");
   display: block;
   position: absolute;
   bottom: 2vh;
@@ -372,42 +361,42 @@ p {
   height: 8vw;
 }
 
-/* line 174, ../../sass/blocks/_scene.scss */
+/* line 168, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__scene {
   left: -1500px;
 }
-/* line 178, ../../sass/blocks/_scene.scss */
+/* line 172, ../../sass/blocks/_scene.scss */
 .game.--step3 .game__mountain {
   left: 752px;
 }
 
-/* line 185, ../../sass/blocks/_scene.scss */
+/* line 179, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__scene {
   left: -2000px;
 }
-/* line 189, ../../sass/blocks/_scene.scss */
+/* line 183, ../../sass/blocks/_scene.scss */
 .game.--step4 .game__mountain {
   left: 252px;
 }
 
-/* line 196, ../../sass/blocks/_scene.scss */
+/* line 190, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__scene {
   left: -2500px;
 }
-/* line 200, ../../sass/blocks/_scene.scss */
+/* line 194, ../../sass/blocks/_scene.scss */
 .game.--step5 .game__mountain {
   left: -248px;
 }
 
-/* line 207, ../../sass/blocks/_scene.scss */
+/* line 201, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__scene {
   left: -3000px;
 }
-/* line 211, ../../sass/blocks/_scene.scss */
+/* line 205, ../../sass/blocks/_scene.scss */
 .game.--step6 .game__mountain {
   left: -748px;
 }
-/* line 215, ../../sass/blocks/_scene.scss */
+/* line 209, ../../sass/blocks/_scene.scss */
 .game.--step6 {
   will-change: animation;
   animation: day_to_night 20s ease-in;
@@ -420,15 +409,15 @@ p {
     background-color: #c2ffff;
   }
 }
-/* line 228, ../../sass/blocks/_scene.scss */
+/* line 222, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__scene {
   left: -3500px;
 }
-/* line 232, ../../sass/blocks/_scene.scss */
+/* line 226, ../../sass/blocks/_scene.scss */
 .game.--step7 .game__mountain {
   left: -1248px;
 }
-/* line 236, ../../sass/blocks/_scene.scss */
+/* line 230, ../../sass/blocks/_scene.scss */
 .game.--step7 {
   will-change: animation;
   animation: day_to_night 20s ease-in;
@@ -441,11 +430,11 @@ p {
     background-color: #135176;
   }
 }
-/* line 249, ../../sass/blocks/_scene.scss */
+/* line 243, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__scene {
   left: -4000px;
 }
-/* line 253, ../../sass/blocks/_scene.scss */
+/* line 247, ../../sass/blocks/_scene.scss */
 .game.--step8 .game__mountain {
   left: -1748px;
 }

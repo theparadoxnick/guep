@@ -92,10 +92,6 @@
     .game__truck {
         left: 34vw;
     }
-
-    .game__scene {
-        // left: -680px;
-    }
     
     .game__mountain {
         left: 1752px;
@@ -109,28 +105,26 @@
     }
 
     .game__truck {
-
+        
         &:after {
-            
             content: '';
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            background-image: url('../../assets/img/hand-check.png');
             display: block;
             position: absolute;
-            bottom: 2vh;
+            background-image: url('../../assets/img/hand-cpf.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 4.8vh;
             left: 9vw;
             animation: interation 5s ease-in;
             animation-fill-mode: forwards;
-
+            
             @keyframes interation {
                 
                 from {
                     width: 0;
                     height: 0;
                 }
-    
+                
                 to {
                     width: 5vw;
                     height: 8vw;
@@ -157,7 +151,7 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            background-image: url('../../assets/img/hand-check.png');
+            // background-image: url('../../assets/img/hand-check.png');
             display: block;
             position: absolute;
             bottom: 2vh;
