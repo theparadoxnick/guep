@@ -59,8 +59,14 @@
 
 .game__scenario.--start .game__truck {
     & {
-        left: 2vw; 
+        left: 6vw; 
         z-index: 1;
+    }
+
+    &.--guep {
+        & {
+            left: 2vw;
+        }
     }
 }
 
@@ -90,7 +96,11 @@
 .game__scenario.--step1 {
     
     .game__truck {
-        left: 26vw;
+        left: 36vw;
+
+        &.--guep {
+            left: 22vw;
+        }
     }
 
     .game__quote {
@@ -102,6 +112,13 @@
 
     .game__truck {
         
+        &.--guep {
+            &:after {
+                background-image: url('../../assets/img/hand-cpf-guep.png');   
+                bottom: 3.8vh;         
+            }
+        }
+
         &:after {
             content: '';
             display: block;

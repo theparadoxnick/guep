@@ -13,6 +13,12 @@
         will-change: transition;
         transition: 5s left;
     }
+
+    &.--guep {
+        & {
+            bottom: 20.4vh;
+        }
+    }
 }
 
 .truck__animation--a,
