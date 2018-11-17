@@ -294,36 +294,12 @@ p {
 .game__scenario.--step1 .game__truck.--guep {
   left: 22vw;
 }
-/* line 107, ../../sass/blocks/_scene.scss */
-.game__scenario.--step1 .game__quote {
-  display: block;
-}
-/* line 4, ../../sass/mixins/_typewrite.scss */
-.game__scenario.--step1 .game__quote {
-  font-size: 1.2em;
-  font-weight: 600;
-  text-align: center;
-  color: #135176;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  text-transform: uppercase;
-  animation: typing 3.5s steps(200, end);
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* line 110, ../../sass/blocks/_scene.scss */
+.game__scenario.--step1 .game__truck.--guep:after {
+  bottom: 2.8vh;
+  background-image: url("../../assets/img/hand-check-phone.png");
 }
 /* line 116, ../../sass/blocks/_scene.scss */
-.game__scenario.--step1 .game__truck.--guep:after {
-  background-image: url("../../assets/img/hand-cpf-guep.png");
-  bottom: 3.8vh;
-}
-/* line 122, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__truck:after {
   content: '';
   display: block;
@@ -333,7 +309,7 @@ p {
   background-size: cover;
   bottom: 4.8vh;
   left: 9vw;
-  animation: interation 5s ease-in;
+  animation: interation 3s ease-in;
   animation-fill-mode: forwards;
 }
 @keyframes interation {
@@ -346,57 +322,105 @@ p {
     height: 8vw;
   }
 }
-/* line 152, ../../sass/blocks/_scene.scss */
-.game__scenario.--step2 .game__scene,
-.game__scenario.--step2 .game__mountains {
-  left: -1000px;
+/* line 147, ../../sass/blocks/_scene.scss */
+.game__scenario.--step2 .game__quote {
+  display: block;
 }
-/* line 159, ../../sass/blocks/_scene.scss */
+/* line 4, ../../sass/mixins/_typewrite.scss */
+.game__scenario.--step2 .game__quote {
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: 600;
+  color: #4e4c4c;
+  color: #135176;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3s steps(290, end);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* line 154, ../../sass/blocks/_scene.scss */
+.game__scenario.--step2 .game__truck {
+  left: 36vw;
+}
+/* line 158, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck:after {
   content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../../assets/img/hand-cpf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 4.8vh;
+  left: 9vw;
   width: 5vw;
   height: 8vw;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: absolute;
-  bottom: 2vh;
-  left: 9vw;
-  animation: interation 5s ease-in;
 }
-
-/* line 177, ../../sass/blocks/_scene.scss */
+/* line 172, ../../sass/blocks/_scene.scss */
+.game__scenario.--step2 .game__truck.--guep {
+  left: 62vw;
+}
+/* line 176, ../../sass/blocks/_scene.scss */
+.game__scenario.--step2 .game__truck.--guep:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2.8vh;
+  background-image: url("../../assets/img/phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 9vw;
+  animation: interation 3s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes interation {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 5vw;
+    height: 8vw;
+  }
+}
+/* line 207, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__scene,
 .game__scenario.--step3 .game__mountains {
-  left: -1500px;
+  left: -2500px;
 }
 
-/* line 185, ../../sass/blocks/_scene.scss */
+/* line 215, ../../sass/blocks/_scene.scss */
 .game__scenario.--step4 .game__scene,
 .game__scenario.--step4 .game__mountains {
   left: -2000px;
 }
 
-/* line 193, ../../sass/blocks/_scene.scss */
+/* line 223, ../../sass/blocks/_scene.scss */
 .game__scenario.--step5 .game__scene,
 .game__scenario.--step5 .game__mountains {
   left: -2500px;
 }
 
-/* line 201, ../../sass/blocks/_scene.scss */
+/* line 231, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__scene,
 .game__scenario.--step6 .game__mountains {
   left: -3000px;
 }
 
-/* line 209, ../../sass/blocks/_scene.scss */
+/* line 239, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__scene,
 .game__scenario.--step7 .game__mountains {
   left: -3500px;
 }
 
-/* line 217, ../../sass/blocks/_scene.scss */
+/* line 247, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__scene,
 .game__scenario.--step8 .game__mountains {
   left: -4000px;

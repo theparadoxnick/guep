@@ -2,15 +2,15 @@
 
 @mixin typewrite {
     & {
-        font-size: 1.2em;
-        font-weight: 600;
+        font-size: 1.2vw;
         text-align: center;
+        font-weight: 600;
+        color: #4e4c4c;
         color: $g-quote;
         overflow: hidden;
         white-space: nowrap; 
         margin: 0 auto; 
-        text-transform: uppercase;
-        animation: typing 3.5s steps(200, end);
+        animation: typing 3s steps(290,end);
 
         @keyframes typing {
             from { width: 0 }
