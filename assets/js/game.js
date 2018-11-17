@@ -5,7 +5,7 @@
 jQuery( function() {
 
     var btn_start = jQuery( '.intro__start' ),
-        game = jQuery( '.game' ),
+        game = jQuery( '.game__scenario' ),
         intro = jQuery( '.intro' );
 
     btn_start.on( 'click' , function () {
@@ -24,7 +24,7 @@ jQuery( function() {
 
     var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8' ],
         counter = 0,
-        btn_next = jQuery( '.game__next-step' );
+        btn_next = jQuery( '.game__mountains' );
 
     btn_next.on('click', function() {
 

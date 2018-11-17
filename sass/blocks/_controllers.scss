@@ -1,4 +1,7 @@
 
+//----------------
+// Controladores
+//----------------
 
 .game__next-step {
     & {
@@ -8,5 +11,6 @@
         background-color: transparent;
         border: none;
         outline: none;
+        z-index: 4;
     }
 }

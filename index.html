@@ -10,41 +10,40 @@
     <title>Trilha GUEP</title>
 </head>
 <body>
+    
     <section class="intro">
         <div class="intro__list">
             <img class="intro__logo" src="assets/img/guep-logo.png" alt="Logo da GUEP">
             <button class="intro__start --purple">Iniciar</button>
             <h2>Versão de demonstração -- Visualizar na Viewport<br> da TV de 40'(1920 x 1080)</h2>
             <p>(Ctrl + shift + i)</p>
-            <!-- <h2>Deseja reiniciar o jogo?</h2> -->
-           <!-- <button class="intro__restart --purple">Reiniciar</button> -->
         </div>
 	</section>
-
-	<section class="game -is-disabled"> <!--| --start --driving --end |-->
-        <img class="game__scene" src="assets/img/scene-v6.png" alt="Cenário">
-        <img class="game__mountain" src="assets/img/mountain.png" alt="Montanha">
-        <div class="game__truck">
-            <span class="truck__animation--a">
-                <span class="truck__animation--b">
-                    <img class="truck__structure" src="assets/img/truck-structure.png" alt="Carroceria do caminhão">
-                </span>
-            </span>
-        </div>
-        <!-- <div class="game__truck">
-                <span class="truck__animation--a">
-                    <span class="truck__animation--b">
-                        <img class="truck__structure" src="assets/img/truck-structure.png" alt="Carroceria do caminhão">
+    
+    <section class="game__main">
+        
+        <div class="game__layers">
+            
+            <div class="game__scenario"> <!--| --start --driving --end |-->
+                <img class="game__mountains" src="assets/img/scenario-mountains.png" alt="Montanha">
+                <img class="game__scene" src="assets/img/scenario.png" alt="Cenário">
+                <div class="game__truck">
+                    <span class="truck__animation--a">
+                        <span class="truck__animation--b">
+                            <img class="truck__structure" src="assets/img/truck-structure-gray.png" alt="Carroceria do Caminhão do Concorrente">
+                        </span>
                     </span>
-                </span>
-        </div> -->
-        <div class="game__typewriter">
-            <p class="game__quote --a">Putz, esse motorista terá que esperar algumas horas para ser liberado.</p>
-            <!--<p class="game__quote --b">Pelo que estão dizendo, ele parece estar com alguns problemas criminais...</p> -->
-        </div>
-        <button class="game__next-step --blue"></button>
+                </div>
+                <div class="game__typewriter">
+                    <p class="game__quote --a">Putz, esse motorista terá que esperar algumas horas para ser liberado.</p>
+                </div>
 
-	</section>
+                <button class="game__next-step"></button>
+        
+            </div>
+
+        </div>
+    </section>
 
 	<script src="assets/js/jquery-1.12.0.min.js"></script>
 	<script src="assets/js/game.js"></script>
