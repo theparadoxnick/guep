@@ -239,9 +239,10 @@ p {
 /* line 30, ../../sass/blocks/_scene.scss */
 .game__mountains {
   z-index: 2;
+  cursor: pointer;
 }
 
-/* line 38, ../../sass/blocks/_scene.scss */
+/* line 39, ../../sass/blocks/_scene.scss */
 .game__scene,
 .game__mountains {
   position: absolute;
@@ -253,24 +254,24 @@ p {
   transition: 5s left;
 }
 
-/* line 50, ../../sass/blocks/_scene.scss */
+/* line 51, ../../sass/blocks/_scene.scss */
 .game__quote {
   display: none;
 }
 
-/* line 60, ../../sass/blocks/_scene.scss */
+/* line 61, ../../sass/blocks/_scene.scss */
 .game__scenario.--start .game__truck {
   left: 2vw;
   z-index: 1;
 }
 
-/* line 67, ../../sass/blocks/_scene.scss */
+/* line 68, ../../sass/blocks/_scene.scss */
 .game__scenario.--end .game__truck {
   left: 112vw;
   z-index: 1;
 }
 
-/* line 77, ../../sass/blocks/_scene.scss */
+/* line 78, ../../sass/blocks/_scene.scss */
 .game__scenario.--start .game__typewriter {
   position: absolute;
   top: 5vw;
@@ -281,11 +282,11 @@ p {
   padding: 0 19vw;
 }
 
-/* line 91, ../../sass/blocks/_scene.scss */
+/* line 92, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__truck {
   left: 26vw;
 }
-/* line 96, ../../sass/blocks/_scene.scss */
+/* line 97, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__quote {
   display: block;
 }
@@ -309,7 +310,7 @@ p {
     width: 100%;
   }
 }
-/* line 104, ../../sass/blocks/_scene.scss */
+/* line 105, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__truck:after {
   content: '';
   display: block;
@@ -332,12 +333,12 @@ p {
     height: 8vw;
   }
 }
-/* line 134, ../../sass/blocks/_scene.scss */
+/* line 135, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__scene,
 .game__scenario.--step2 .game__mountains {
   left: -1000px;
 }
-/* line 141, ../../sass/blocks/_scene.scss */
+/* line 142, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck:after {
   content: '';
   width: 5vw;
@@ -352,37 +353,37 @@ p {
   animation: interation 5s ease-in;
 }
 
-/* line 159, ../../sass/blocks/_scene.scss */
+/* line 160, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__scene,
 .game__scenario.--step3 .game__mountains {
   left: -1500px;
 }
 
-/* line 167, ../../sass/blocks/_scene.scss */
+/* line 168, ../../sass/blocks/_scene.scss */
 .game__scenario.--step4 .game__scene,
 .game__scenario.--step4 .game__mountains {
   left: -2000px;
 }
 
-/* line 175, ../../sass/blocks/_scene.scss */
+/* line 176, ../../sass/blocks/_scene.scss */
 .game__scenario.--step5 .game__scene,
 .game__scenario.--step5 .game__mountains {
   left: -2500px;
 }
 
-/* line 183, ../../sass/blocks/_scene.scss */
+/* line 184, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__scene,
 .game__scenario.--step6 .game__mountains {
   left: -3000px;
 }
 
-/* line 191, ../../sass/blocks/_scene.scss */
+/* line 192, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__scene,
 .game__scenario.--step7 .game__mountains {
   left: -3500px;
 }
 
-/* line 199, ../../sass/blocks/_scene.scss */
+/* line 200, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__scene,
 .game__scenario.--step8 .game__mountains {
   left: -4000px;
