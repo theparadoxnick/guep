@@ -1,0 +1,27 @@
+
+
+@mixin typewrite {
+    & {
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        color: $g-quote;
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        text-transform: uppercase;
+        border-right: 4px solid $night;
+        animation: typing 3.5s steps(200, end),
+        typing-cursor 1s step-end infinite;
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes typing-cursor {
+            from, to { border-color: transparent }
+            50% { border-color: $night }
+        }
+    }
+}

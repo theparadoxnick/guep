@@ -26,8 +26,8 @@
         background-position: center center;
         background-size: cover;
         background-repeat: repeat;
-        width: 1.8vw;
-        height: 3.5vh;
+        width: 1.5vw;
+        height: 1.5vw;
         will-change: transition;
         transition: 2s animation;
     }
@@ -37,7 +37,7 @@
 .truck__animation--a {
         
     &::after {
-        left: 8.7vw;
+        left: 8.9vw;
         background-image: url('../../assets/img/truck-wheel.png');
         transition: 2s animation;
     }
@@ -86,19 +86,5 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-    }
-}
-
-.game.--start .game__truck {
-    & {
-        left: 8vw;
-        z-index: 1;
-    }
-}
-
-.game.--end .game__truck {
-    & {
-        left: 112vw;
-        z-index: 1;
     }
 }
