@@ -13,6 +13,11 @@
         z-index: 1;
         background-color: $day;
     }
+
+    &.-is-disabled {
+        height: 0;
+        width: 0;
+    }
 }
 
 .game__scene {
@@ -286,60 +291,20 @@
                 height: 8vw;
                 bottom: 2.8vh;
                 left: 9vw;
-                background-image: url('../../assets/img/phone.png');
-            }
-            
-            &:before {
-                width: 4vw;
-                height: 12vh;
-                left: 10.8vw;
-                bottom: 20vh;
-                background-image: url('../../assets/img/nfe.png');
+                background-image: url('../../assets/img/hand-check-phone.png');
             }
         }
     }
 }
 
 .game__scenario.--step5 {
-
-    .game__truck {
-        & {
-            left: 36vw;
-        }
-
-        &.--guep {
-            & {
-                left: 62vw;
-            }
-
-            &:after,
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &:after {
-                left: 8vw;
-                width: 5vw;
-                height: 8vw;
-                bottom: 2.8vh;
-                left: 9vw;
-                background-image: url('../../assets/img/phone.png');
-            }
-            
-            &:before {
-                width: 4vw;
-                height: 12vh;
-                left: 10.8vw;
-                bottom: 20vh;
-                background-image: url('../../assets/img/mdfe.png');
-            }
-        }
+    
+    .game__scene,
+    .game__mountains {
+        left: -2500px;
     }
 }
+
 
 .game__scenario.--step6 {
     

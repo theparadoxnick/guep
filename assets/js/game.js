@@ -12,6 +12,7 @@ jQuery( function() {
         
         game.addClass( '--start' ).addClass( '-is-active' ).addClass( '--driving' ).removeClass( '-is-disabled' );
         intro.addClass( '-is-disabled' );
+        
 
         setTimeout( function() {
 
@@ -22,9 +23,10 @@ jQuery( function() {
         return false;
     });
 
-    var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8' ],
+    var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8', 'step9','step10', 'step11','step12','step13' ],
         counter = 0,
-        btn_next = jQuery( '.game__mountains' );
+        btn_next = jQuery( '.game__mountains' ); 
+        // Mutreta que eu fiz para tornar a própria tela button do jogo
 
     btn_next.on('click', function() {
 
@@ -38,7 +40,7 @@ jQuery( function() {
                 
                 setTimeout( function() {
     
-                    game.removeClass( '--step8' ).removeClass( '--end' ).removeClass( '--driving' );
+                    game.removeClass( '--step13' ).removeClass( '--end' ).removeClass( '--driving' );
                     
                 }, 5000 );
                 
@@ -74,7 +76,5 @@ jQuery( function() {
                 return false;
             }
         }
-        
     });
-    
 });
