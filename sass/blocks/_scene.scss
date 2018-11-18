@@ -3,6 +3,25 @@
 //---------------------
 // Parei no step6
 
+.game__quote {
+    & {
+        font-size: 1.2vw;
+        text-align: center;
+        font-weight: 600;
+        color: #4e4c4c;
+        color: $g-quote;
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        animation: typing 3s steps(290,end);
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+    }
+}
+
 .game__scenario {
     
     & {
@@ -143,15 +162,6 @@
 }
 
 .game__scenario.--step2 {
-
-    .game__quote {
-        & {
-            @include typewrite;
-            display: block;
-            opacity: 1;
-            transition: 3s ease-in;
-        }
-    }
 
     .game__truck {
         & {
