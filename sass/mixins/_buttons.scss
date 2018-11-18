@@ -6,16 +6,16 @@
 @mixin game-button {
     & {
         width: 100%;
-        max-width: 200px;
-        line-height: 60px;
+        max-width: 20vw;
+        line-height: 10vh;
         background-color: transparent;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.2vw;
         font-weight: 400;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         transition: .2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-        margin-bottom: 20px;
+        margin-bottom: 1vw;
 
         &.--yellow {
             border: 2px solid $g-yellow;
