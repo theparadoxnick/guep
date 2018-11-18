@@ -1,6 +1,7 @@
 //---------------------
 // Section Scene
 //---------------------
+// Parei no step6
 
 .game__scenario {
     
@@ -147,6 +148,8 @@
         & {
             @include typewrite;
             display: block;
+            opacity: 1;
+            transition: 3s ease-in;
         }
     }
 
@@ -200,29 +203,141 @@
             }
         }
     }
-} 
+}
 
 .game__scenario.--step3 {
-    
-    .game__scene,
-    .game__mountains {
-        left: -2500px;
-    }    
+
+    .game__truck {
+        & {
+            left: 36vw;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-image: url('../../assets/img/hand-cpf.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 4.8vh;
+            left: 9vw;
+            width: 5vw;
+            height: 8vw;
+        }
+
+        &.--guep {
+            & {
+                left: 62vw;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:after {
+                left: 8vw;
+                width: 5vw;
+                height: 8vw;
+                bottom: 2.8vh;
+                left: 9vw;
+                background-image: url('../../assets/img/phone.png');
+            }
+            
+            &:before {
+                width: 4vw;
+                height: 12vh;
+                left: 10.8vw;
+                bottom: 20vh;
+                background-image: url('../../assets/img/cte.png');
+            }
+        }
+    }
 }
 
 .game__scenario.--step4 {
-    
-    .game__scene,
-    .game__mountains {
-        left: -2000px;
+
+    .game__truck {
+        & {
+            left: 36vw;
+        }
+
+        &.--guep {
+            & {
+                left: 62vw;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:after {
+                left: 8vw;
+                width: 5vw;
+                height: 8vw;
+                bottom: 2.8vh;
+                left: 9vw;
+                background-image: url('../../assets/img/phone.png');
+            }
+            
+            &:before {
+                width: 4vw;
+                height: 12vh;
+                left: 10.8vw;
+                bottom: 20vh;
+                background-image: url('../../assets/img/nfe.png');
+            }
+        }
     }
-} 
+}
 
 .game__scenario.--step5 {
-    
-    .game__scene,
-    .game__mountains {
-        left: -2500px;
+
+    .game__truck {
+        & {
+            left: 36vw;
+        }
+
+        &.--guep {
+            & {
+                left: 62vw;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:after {
+                left: 8vw;
+                width: 5vw;
+                height: 8vw;
+                bottom: 2.8vh;
+                left: 9vw;
+                background-image: url('../../assets/img/phone.png');
+            }
+            
+            &:before {
+                width: 4vw;
+                height: 12vh;
+                left: 10.8vw;
+                bottom: 20vh;
+                background-image: url('../../assets/img/mdfe.png');
+            }
+        }
     }
 }
 
@@ -230,7 +345,7 @@
     
     .game__scene,
     .game__mountains {
-        left: -3000px;
+        left: -2500px;
     }
 }
 
@@ -238,11 +353,19 @@
     
     .game__scene,
     .game__mountains {
-        left: -3500px;
+        left: -3000px;
     }
 }
 
 .game__scenario.--step8 {
+    
+    .game__scene,
+    .game__mountains {
+        left: -3500px;
+    }
+}
+
+.game__scenario.--step9 {
     
     .game__scene,
     .game__mountains {
