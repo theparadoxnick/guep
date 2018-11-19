@@ -226,16 +226,16 @@ p {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 3s steps(76, end);
+  animation: typing 3s steps(300, end);
   z-index: 2;
-  width: 536px;
+  width: 55vw;
 }
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 536px;
+    width: 55vw;
   }
 }
 /* line 29, ../../sass/blocks/_scene.scss */
