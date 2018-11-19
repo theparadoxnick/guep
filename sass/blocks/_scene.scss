@@ -2,7 +2,6 @@
 // Section Scene
 //---------------------
 
-
 .game__quote {
     & {
         display: none;
@@ -686,6 +685,44 @@
 }
 
 .game__scenario.--step12 {
+
+    .game__truck {
+        z-index: 1;
+    }
+
+    .game__truck.--concorrente {
+        left: -12vw;
+    }
+
+    .game__truck.--guep {
+        left: 100vw;
+    }
+    
+    .game__scene,
+    .game__mountains {
+        left: -5630px;
+    }
+}
+
+.game__scenario.--step13 {
+    
+    &:after {
+        content: ' ';
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../assets/img/guep-favicon.png');
+        background-repeat: no-repeat;
+        width: 10vw;
+        height: 12vh;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+    }
+
+    .game__blur {
+        transition: filter 3s ease-in;
+        filter: blur(100px);
+    }
 
     .game__truck {
         z-index: 1;

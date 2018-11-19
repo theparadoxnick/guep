@@ -33,7 +33,7 @@ jQuery( function() {
             return false;
         } else {
 
-            if (counter > 12 ){
+            if (counter > 13 ){
                 game.addClass( '--driving' );
                 game.removeClass( '--start' ).addClass( '--end' );
                 game.find( '.game__quote' ).each(function(){
@@ -45,7 +45,7 @@ jQuery( function() {
                 
                 setTimeout( function() {
     
-                    game.removeClass( '--step12' ).removeClass( '--end' ).removeClass( '--driving' );
+                    game.removeClass( '--step13' ).removeClass( '--end' ).removeClass( '--driving' );
                     
                 }, 5000 );
                 
