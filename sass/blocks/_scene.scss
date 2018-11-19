@@ -7,15 +7,16 @@
     & {
         display: none;
         position: absolute;
-        font-size: 1.2vw;
+        font-size: 1.7vw;
         text-align: center;
+        text-transform: uppercase;
         font-weight: 600;
-        color: $g-quote;
+        color: #292929;
         overflow: hidden;
         white-space: nowrap; 
         margin: 0 auto; 
         z-index: 2;
-        width: 55vw;
+        width: 85vw;
         top: 10vh;
         left: 50%;
         transform: translate(-50%);

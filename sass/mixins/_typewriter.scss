@@ -6,8 +6,8 @@
         text-align: center;
         font-weight: 600;
         color: #4e4c4c;
-        color: $g-quote;
         overflow: hidden;
+        text-transform: lowercase;
         white-space: nowrap; 
         margin: 0 auto; 
         animation: typing 3s steps(290,end);
