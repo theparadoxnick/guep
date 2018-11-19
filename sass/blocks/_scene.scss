@@ -116,7 +116,7 @@
 .game__scenario.--step1 {
     
     .game__truck {
-        left: 36vw;
+        left: 26vw;
 
         &.--guep {
             left: 22vw;
@@ -165,7 +165,7 @@
 
     .game__truck {
         & {
-            left: 36vw;
+            left: 26vw;
         }
 
         &:after {
@@ -183,7 +183,7 @@
 
         &.--guep {
             & {
-                left: 62vw;
+                left: 52vw;
             }
 
             &:after {
@@ -219,7 +219,7 @@
 
     .game__truck {
         & {
-            left: 36vw;
+            left: 26vw;
         }
 
         &:after {
@@ -237,7 +237,7 @@
 
         &.--guep {
             & {
-                left: 62vw;
+                left: 52vw;
             }
 
             &:after,
@@ -286,12 +286,12 @@
 
     .game__truck {
         & {
-            left: 36vw;
+            left: 26vw;
         }
 
         &.--guep {
             & {
-                left: 62vw;
+                left: 52vw;
             }
 
             &:after,

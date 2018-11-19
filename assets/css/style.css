@@ -308,7 +308,7 @@ p {
 
 /* line 118, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__truck {
-  left: 36vw;
+  left: 26vw;
 }
 /* line 121, ../../sass/blocks/_scene.scss */
 .game__scenario.--step1 .game__truck.--guep {
@@ -344,7 +344,7 @@ p {
 }
 /* line 167, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck {
-  left: 36vw;
+  left: 26vw;
 }
 /* line 171, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck:after {
@@ -361,7 +361,7 @@ p {
 }
 /* line 185, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck.--guep {
-  left: 62vw;
+  left: 52vw;
 }
 /* line 189, ../../sass/blocks/_scene.scss */
 .game__scenario.--step2 .game__truck.--guep:after {
@@ -388,7 +388,7 @@ p {
 }
 /* line 221, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__truck {
-  left: 36vw;
+  left: 26vw;
 }
 /* line 225, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__truck:after {
@@ -405,7 +405,7 @@ p {
 }
 /* line 239, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__truck.--guep {
-  left: 62vw;
+  left: 52vw;
 }
 /* line 243, ../../sass/blocks/_scene.scss */
 .game__scenario.--step3 .game__truck.--guep:after, .game__scenario.--step3 .game__truck.--guep:before {
@@ -444,11 +444,11 @@ p {
 }
 /* line 288, ../../sass/blocks/_scene.scss */
 .game__scenario.--step4 .game__truck {
-  left: 36vw;
+  left: 26vw;
 }
 /* line 293, ../../sass/blocks/_scene.scss */
 .game__scenario.--step4 .game__truck.--guep {
-  left: 62vw;
+  left: 52vw;
 }
 /* line 297, ../../sass/blocks/_scene.scss */
 .game__scenario.--step4 .game__truck.--guep:after, .game__scenario.--step4 .game__truck.--guep:before {
