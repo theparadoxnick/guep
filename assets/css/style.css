@@ -540,32 +540,32 @@ p {
     transform: translate3d(0, 0, 0);
   }
 }
-/* line 406, ../../sass/blocks/_scene.scss */
+/* line 405, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__scene,
 .game__scenario.--step6 .game__mountains {
   left: -2260px;
 }
-/* line 411, ../../sass/blocks/_scene.scss */
+/* line 410, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__truck,
 .game__scenario.--step6 .game__truck.--guep {
   left: 11vw;
   z-index: 1;
 }
 
-/* line 421, ../../sass/blocks/_scene.scss */
+/* line 420, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__scene,
 .game__scenario.--step7 .game__mountains {
   left: -2500px;
 }
-/* line 426, ../../sass/blocks/_scene.scss */
+/* line 425, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck {
   z-index: 1;
 }
-/* line 429, ../../sass/blocks/_scene.scss */
+/* line 428, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--guep {
   left: 76vw;
 }
-/* line 432, ../../sass/blocks/_scene.scss */
+/* line 431, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--guep:after, .game__scenario.--step7 .game__truck.--guep:before {
   content: '';
   display: block;
@@ -575,7 +575,7 @@ p {
   background-position: center center;
   z-index: 2;
 }
-/* line 443, ../../sass/blocks/_scene.scss */
+/* line 442, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--guep:after {
   bottom: -2.8vh;
   left: 0.2vw;
@@ -594,7 +594,7 @@ p {
     width: 3vw;
   }
 }
-/* line 464, ../../sass/blocks/_scene.scss */
+/* line 463, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--guep:before {
   left: 8vw;
   width: 5vw;
@@ -616,11 +616,11 @@ p {
     height: 8vw;
   }
 }
-/* line 490, ../../sass/blocks/_scene.scss */
+/* line 489, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--concorrente {
   left: 75vw;
 }
-/* line 493, ../../sass/blocks/_scene.scss */
+/* line 492, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--concorrente:after, .game__scenario.--step7 .game__truck.--concorrente:before {
   content: '';
   display: block;
@@ -630,7 +630,7 @@ p {
   background-position: center center;
   z-index: 2;
 }
-/* line 504, ../../sass/blocks/_scene.scss */
+/* line 503, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--concorrente:after {
   bottom: -2.8vh;
   left: 0.2vw;
@@ -649,7 +649,7 @@ p {
     width: 3vw;
   }
 }
-/* line 525, ../../sass/blocks/_scene.scss */
+/* line 524, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__truck.--concorrente:before {
   background-image: url("../../assets/img/caixas.png");
   z-index: 1;
@@ -670,19 +670,19 @@ p {
     height: 6vh;
   }
 }
-/* line 553, ../../sass/blocks/_scene.scss */
+/* line 552, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck {
   z-index: 1;
 }
-/* line 557, ../../sass/blocks/_scene.scss */
+/* line 556, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck.--guep {
   left: 80vw;
 }
-/* line 561, ../../sass/blocks/_scene.scss */
+/* line 560, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck.--concorrente {
   left: 57vw;
 }
-/* line 564, ../../sass/blocks/_scene.scss */
+/* line 563, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck.--concorrente:after, .game__scenario.--step8 .game__truck.--concorrente:before {
   content: '';
   display: block;
@@ -692,7 +692,7 @@ p {
   background-position: center center;
   z-index: 2;
 }
-/* line 575, ../../sass/blocks/_scene.scss */
+/* line 574, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck.--concorrente:after {
   bottom: -2.8vh;
   left: 0.2vw;
@@ -711,7 +711,7 @@ p {
     width: 3vw;
   }
 }
-/* line 596, ../../sass/blocks/_scene.scss */
+/* line 595, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__truck.--concorrente:before {
   content: ' ';
   right: 11vw;
@@ -723,61 +723,61 @@ p {
   animation: caixas 5s ease-in;
   animation-fill-mode: forwards;
 }
-/* line 609, ../../sass/blocks/_scene.scss */
+/* line 608, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__scene,
 .game__scenario.--step8 .game__mountains {
   left: -2850px;
 }
 
-/* line 617, ../../sass/blocks/_scene.scss */
+/* line 616, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__truck {
   z-index: 1;
 }
-/* line 621, ../../sass/blocks/_scene.scss */
+/* line 620, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 625, ../../sass/blocks/_scene.scss */
+/* line 624, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__truck.--guep {
   left: 46vw;
 }
-/* line 629, ../../sass/blocks/_scene.scss */
+/* line 628, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__scene,
 .game__scenario.--step9 .game__mountains {
   left: -4390px;
 }
 
-/* line 637, ../../sass/blocks/_scene.scss */
+/* line 636, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck {
   z-index: 1;
 }
-/* line 641, ../../sass/blocks/_scene.scss */
+/* line 640, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 645, ../../sass/blocks/_scene.scss */
+/* line 644, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck.--guep {
   left: 46vw;
 }
-/* line 649, ../../sass/blocks/_scene.scss */
+/* line 648, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__scene,
 .game__scenario.--step10 .game__mountains {
   left: -5630px;
 }
 
-/* line 657, ../../sass/blocks/_scene.scss */
+/* line 656, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck {
   z-index: 1;
 }
-/* line 661, ../../sass/blocks/_scene.scss */
+/* line 660, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 665, ../../sass/blocks/_scene.scss */
+/* line 664, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck.--guep {
   left: 78vw;
 }
-/* line 668, ../../sass/blocks/_scene.scss */
+/* line 667, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck.--guep:after {
   display: block;
   content: ' ';
@@ -788,62 +788,73 @@ p {
   left: 9vw;
   background-image: url("../../assets/img/hand-signature-guep.png");
 }
-/* line 681, ../../sass/blocks/_scene.scss */
+/* line 680, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__scene,
 .game__scenario.--step11 .game__mountains {
   left: -5630px;
 }
 
-/* line 689, ../../sass/blocks/_scene.scss */
+/* line 688, ../../sass/blocks/_scene.scss */
 .game__scenario.--step12 .game__truck {
   z-index: 1;
 }
-/* line 693, ../../sass/blocks/_scene.scss */
+/* line 692, ../../sass/blocks/_scene.scss */
 .game__scenario.--step12 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 697, ../../sass/blocks/_scene.scss */
+/* line 696, ../../sass/blocks/_scene.scss */
 .game__scenario.--step12 .game__truck.--guep {
   left: 100vw;
 }
-/* line 701, ../../sass/blocks/_scene.scss */
+/* line 700, ../../sass/blocks/_scene.scss */
 .game__scenario.--step12 .game__scene,
 .game__scenario.--step12 .game__mountains {
   left: -5630px;
 }
 
-/* line 709, ../../sass/blocks/_scene.scss */
+/* line 708, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13:after {
   content: ' ';
   background-size: cover;
   background-position: center;
   background-image: url("../../assets/img/guep-favicon.png");
   background-repeat: no-repeat;
-  width: 10vw;
-  height: 16vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   bottom: 50%;
+  animation: 2s opacity-logo ease-in;
+  animation-fill-mode: forwards;
 }
-/* line 723, ../../sass/blocks/_scene.scss */
+@keyframes opacity-logo {
+  from {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  to {
+    width: 10vw;
+    height: 16vh;
+  }
+}
+/* line 737, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__blur {
   transition: filter 3s ease-in;
   filter: blur(100px);
 }
-/* line 728, ../../sass/blocks/_scene.scss */
+/* line 742, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck {
   z-index: 1;
 }
-/* line 732, ../../sass/blocks/_scene.scss */
+/* line 746, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 736, ../../sass/blocks/_scene.scss */
+/* line 750, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck.--guep {
   left: 100vw;
 }
-/* line 740, ../../sass/blocks/_scene.scss */
+/* line 754, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__scene,
 .game__scenario.--step13 .game__mountains {
   left: -5630px;

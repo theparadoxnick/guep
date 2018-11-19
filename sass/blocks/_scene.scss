@@ -400,7 +400,6 @@
     
 }
 
-
 .game__scenario.--step6 {
     
     .game__scene,
@@ -712,12 +711,27 @@
         background-position: center;
         background-image: url('../../assets/img/guep-favicon.png');
         background-repeat: no-repeat;
-        width: 10vw;
-        height: 16vh;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
         bottom: 50%;
+
+        animation: 2s opacity-logo ease-in;
+        animation-fill-mode: forwards;
+
+        @keyframes opacity-logo {
+            from {
+                opacity: 0;
+                height: 0;
+                width: 0;
+            }
+
+            to {
+                width: 10vw;
+                height: 16vh;
+            }
+        }
+
     }
 
     .game__blur {
