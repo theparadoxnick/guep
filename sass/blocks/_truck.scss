@@ -79,14 +79,14 @@
 }
 
 
-.game.--driving .truck__animation--a,
-.game.--driving .truck__animation--b {
+.game__scenario.--driving .truck__animation--a,
+.game__scenario.--driving .truck__animation--b {
 
     &::after,
     &::before {
         will-change: transition;
-        transition: 2s animation;        
-        animation: spin 2s linear infinite;
+        transition: 2s animation;
+        animation: spin 2s linear infinite;  
 
         @keyframes spin {
             0% { transform: rotate(0deg); }
