@@ -820,29 +820,30 @@ p {
   background-image: url("../../assets/img/guep-favicon.png");
   background-repeat: no-repeat;
   width: 10vw;
-  height: 12vh;
+  height: 16vh;
   position: absolute;
   left: 50%;
+  transform: translate(-50%);
   bottom: 50%;
 }
-/* line 722, ../../sass/blocks/_scene.scss */
+/* line 723, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__blur {
   transition: filter 3s ease-in;
   filter: blur(100px);
 }
-/* line 727, ../../sass/blocks/_scene.scss */
+/* line 728, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck {
   z-index: 1;
 }
-/* line 731, ../../sass/blocks/_scene.scss */
+/* line 732, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck.--concorrente {
   left: -12vw;
 }
-/* line 735, ../../sass/blocks/_scene.scss */
+/* line 736, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__truck.--guep {
   left: 100vw;
 }
-/* line 739, ../../sass/blocks/_scene.scss */
+/* line 740, ../../sass/blocks/_scene.scss */
 .game__scenario.--step13 .game__scene,
 .game__scenario.--step13 .game__mountains {
   left: -5630px;

@@ -713,9 +713,10 @@
         background-image: url('../../assets/img/guep-favicon.png');
         background-repeat: no-repeat;
         width: 10vw;
-        height: 12vh;
+        height: 16vh;
         position: absolute;
         left: 50%;
+        transform: translate(-50%);
         bottom: 50%;
     }
 
