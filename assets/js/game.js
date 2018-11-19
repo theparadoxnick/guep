@@ -34,7 +34,7 @@ jQuery( function() {
             return false;
         } else {
 
-            if (counter > 7 ){
+            if (counter > 12 ){
                 game.addClass( '--driving' );
                 game.removeClass( '--start' ).addClass( '--end' );
                 
