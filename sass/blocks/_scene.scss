@@ -127,6 +127,7 @@
     
     .game__truck {
         left: 26vw;
+        z-index: 1;
 
         &.--guep {
             left: 22vw;
@@ -176,6 +177,7 @@
     .game__truck {
         & {
             left: 26vw;
+            z-index: 1;
         }
 
         &:after {
@@ -230,6 +232,7 @@
     .game__truck {
         & {
             left: 26vw;
+            z-index: 1;
         }
 
         &:after {
@@ -297,6 +300,7 @@
     .game__truck {
         & {
             left: 26vw;
+            z-index: 1;
         }
 
         &.--guep {
@@ -336,6 +340,7 @@
         
         & {
             left: 66vw;
+            z-index: 1;
         }
 
         &.--guep {
@@ -414,13 +419,15 @@
         left: -2500px;
     }
 
+    .game__truck {
+        z-index: 1;
+    }
     .game__truck.--guep {
         left: 100vw;
     }
 
     .game__truck.--concorrente {
         left: 75vw;
-        z-index: 1;
 
         &:after,
         &:before {
@@ -481,6 +488,10 @@
 }
 
 .game__scenario.--step8 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
@@ -489,6 +500,10 @@
 }
 
 .game__scenario.--step9 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
@@ -497,6 +512,10 @@
 }
 
 .game__scenario.--step10 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
@@ -505,6 +524,10 @@
 }
 
 .game__scenario.--step11 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
@@ -513,6 +536,10 @@
 }
 
 .game__scenario.--step12 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
@@ -521,6 +548,10 @@
 }
 
 .game__scenario.--step13 {
+
+    .game__truck {
+        z-index: 1;
+    }
     
     .game__scene,
     .game__mountains {
