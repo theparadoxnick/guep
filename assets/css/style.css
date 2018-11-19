@@ -727,7 +727,7 @@ p {
 /* line 6, ../../sass/blocks/_truck.scss */
 .game__truck {
   position: absolute;
-  bottom: 22.8vh;
+  bottom: 21.8vh;
   left: -12vw;
   z-index: -1;
   width: 12vw;
