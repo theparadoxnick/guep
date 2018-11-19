@@ -418,21 +418,25 @@
         left: 100vw;
     }
 
-    .game__truck {
+    .game__truck.--concorrente {
         left: 75vw;
         z-index: 1;
 
-        &::after {
+        &:after,
+        &:before {
             content: '';
             display: block;
             position: absolute;
-            background-image: url('../../assets/img/smoke.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
+            z-index: 2;
+        }
+        
+        &:after {
             bottom: -2.8vh;
             left: 0.2vw;
-            z-index: 2;
+            background-image: url('../../assets/img/smoke.png');
             animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
             
             @keyframes smoke {
@@ -448,6 +452,30 @@
                     width: 3vw;
                 }
             }
+        }
+
+        &:before {
+            background-image: url('../../assets/img/caixas.png');
+            z-index: 1;
+            animation: caixas 5s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes caixas {
+                from {
+                    height: 0;
+                    width: 0;
+                    right: 7vw;
+                    bottom: 0vw;
+                }
+
+                to {
+                    right: 11vw;
+                    bottom: -2vw;
+                    width: 4vw;
+                    height: 6vh;
+                }
+            }
+
         }
     }
 }
