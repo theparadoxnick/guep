@@ -37,6 +37,12 @@ jQuery( function() {
             if (counter > 12 ){
                 game.addClass( '--driving' );
                 game.removeClass( '--start' ).addClass( '--end' );
+                game.find( '.game__quote' ).each(function(){
+                    jQuery( this ).removeClass( '--is-active' );
+                    if (jQuery( this ).hasClass( '--' + steps[counter] )){
+                        jQuery( this ).addClass( '--is-active' );
+                    }
+                })
                 
                 setTimeout( function() {
     
@@ -52,6 +58,12 @@ jQuery( function() {
                     game.addClass ( '--driving' );
                     game.removeClass( '--' + steps[counter - 1]);
                     game.addClass( '--' + steps[counter]);
+                    game.find( '.game__quote' ).each(function(){
+                        jQuery( this ).removeClass( '--is-active' );
+                        if (jQuery( this ).hasClass( '--' + steps[counter] )){
+                            jQuery( this ).addClass( '--is-active' );
+                        }
+                    })
                     counter++;
     
                     setTimeout( function() {
@@ -63,6 +75,12 @@ jQuery( function() {
                 } else {
                     game.addClass ( '--driving' );
                     game.addClass( '--' + steps[counter]);
+                    game.find( '.game__quote' ).each(function(){
+                        jQuery( this ).removeClass( '--is-active' );
+                        if (jQuery( this ).hasClass( '--' + steps[counter] )){
+                            jQuery( this ).addClass( '--is-active' );
+                        }
+                    })
                     counter++;
     
                     setTimeout( function() {
