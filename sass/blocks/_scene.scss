@@ -8,10 +8,10 @@
         display: none;
         position: absolute;
         font-size: 1.7vw;
+        font-family: 'Roboto Mono', monospace;
         text-align: center;
-        text-transform: uppercase;
         font-weight: 600;
-        color: #292929;
+        color: #666666;
         overflow: hidden;
         white-space: nowrap; 
         margin: 0 auto; 
@@ -22,14 +22,18 @@
         transform: translate(-50%);
     }
 
+    &.--white {
+        color: #fff;
+    }
+
     &.--is-active {
         display: block;
-        animation: typing 3s steps(300,end);
+        animation: typing 5s steps(400,end);
     }
 
         @keyframes typing {
             from { width: 0 }
-            to { width: 55vw }
+            to { width: 85vw }
         }
 }
 
@@ -645,7 +649,7 @@
     
     .game__scene,
     .game__mountains {
-        left: -5680px;
+        left: -5630px;
     }
 }
 
@@ -661,11 +665,23 @@
 
     .game__truck.--guep {
         left: 78vw;
+
+        &:after {
+            display: block;
+            content: ' ';
+            position: absolute;
+            width: 6vw;
+            height: 8vw;
+            bottom: 2.8vh;
+            left: 9vw;
+            background-image: url('../../assets/img/hand-signature-guep.png');
+        }
+
     }
     
     .game__scene,
     .game__mountains {
-        left: -5680px;
+        left: -5630px;
     }
 }
 
@@ -685,6 +701,6 @@
     
     .game__scene,
     .game__mountains {
-        left: -5680px;
+        left: -5630px;
     }
 }
