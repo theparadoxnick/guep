@@ -319,8 +319,66 @@
     
     .game__scene,
     .game__mountains {
-        left: -2500px;
+        left: -270px;
     }
+
+    .game__truck {
+        
+        & {
+            left: 66vw;
+        }
+
+        &.--guep {
+            & {
+                left: 78vw;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:after {
+               
+                right: 6.2vw;
+                bottom: 57vh;
+                background-image: url('../../assets/img/sm-averb-xml.png');
+                animation: bounceInDown 8s;
+                animation-fill-mode: forwards;
+                
+                @keyframes bounceInDown {
+                    from,
+                    60%,
+                    75%,
+                    90%,
+                    to {
+                      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                    }
+                  
+                    0% {
+                      width: 0;
+                      height: 0;
+                      opacity: 0;
+                      -webkit-transform: translate3d(0, -3000px, 0);
+                      transform: translate3d(0, -3000px, 0);
+                    }
+
+                    to {
+                       width: 11vw;
+                       height: 13vh;
+                      -webkit-transform: translate3d(0, 0, 0);
+                      transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 

@@ -471,28 +471,74 @@ p {
 /* line 320, ../../sass/blocks/_scene.scss */
 .game__scenario.--step5 .game__scene,
 .game__scenario.--step5 .game__mountains {
-  left: -2500px;
+  left: -270px;
 }
-
-/* line 329, ../../sass/blocks/_scene.scss */
+/* line 327, ../../sass/blocks/_scene.scss */
+.game__scenario.--step5 .game__truck {
+  left: 66vw;
+}
+/* line 332, ../../sass/blocks/_scene.scss */
+.game__scenario.--step5 .game__truck.--guep {
+  left: 78vw;
+}
+/* line 336, ../../sass/blocks/_scene.scss */
+.game__scenario.--step5 .game__truck.--guep:after, .game__scenario.--step5 .game__truck.--guep:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 345, ../../sass/blocks/_scene.scss */
+.game__scenario.--step5 .game__truck.--guep:after {
+  right: 6.2vw;
+  bottom: 57vh;
+  background-image: url("../../assets/img/sm-averb-xml.png");
+  animation: bounceInDown 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes bounceInDown {
+  from,
+                    60%,
+                    75%,
+                    90%,
+                    to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+  to {
+    width: 11vw;
+    height: 13vh;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* line 387, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__scene,
 .game__scenario.--step6 .game__mountains {
   left: -2500px;
 }
 
-/* line 337, ../../sass/blocks/_scene.scss */
+/* line 395, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__scene,
 .game__scenario.--step7 .game__mountains {
   left: -3000px;
 }
 
-/* line 345, ../../sass/blocks/_scene.scss */
+/* line 403, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__scene,
 .game__scenario.--step8 .game__mountains {
   left: -3500px;
 }
 
-/* line 353, ../../sass/blocks/_scene.scss */
+/* line 411, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__scene,
 .game__scenario.--step9 .game__mountains {
   left: -4000px;
