@@ -1,7 +1,7 @@
 //---------------------
 // Section Scene
 //---------------------
-// Parei no step6
+
 
 .game__quote {
     & {
@@ -129,7 +129,7 @@
             
             &:after {
                 bottom: 2.8vh;
-                background-image: url('../../assets/img/hand-check-phone.png');
+                background-image: url('../../assets/img/hand-cpf-guep.png');
             }
         }
 
@@ -259,11 +259,24 @@
             }
             
             &:before {
-                width: 4vw;
-                height: 12vh;
-                left: 10.8vw;
-                bottom: 20vh;
-                background-image: url('../../assets/img/cte.png');
+               
+                left: 7.4vw;
+                bottom: 15vh;
+                background-image: url('../../assets/img/cte-nfe-mdfe.png');
+                animation: apps 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                animation-fill-mode: forwards;
+                
+                @keyframes apps {
+                    0% {
+                        width: 0;
+                        height: 0;
+                    }
+
+                    100% {
+                        width: 11vw;
+                        height: 13vh;
+                    }
+                }
             }
         }
     }
