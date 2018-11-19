@@ -429,7 +429,7 @@ p {
   left: 7.4vw;
   bottom: 15vh;
   background-image: url("../../assets/img/cte-nfe-mdfe.png");
-  animation: apps 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: apps 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
 }
 @keyframes apps {
@@ -523,22 +523,62 @@ p {
 /* line 387, ../../sass/blocks/_scene.scss */
 .game__scenario.--step6 .game__scene,
 .game__scenario.--step6 .game__mountains {
-  left: -2500px;
+  left: -2260px;
+}
+/* line 392, ../../sass/blocks/_scene.scss */
+.game__scenario.--step6 .game__truck,
+.game__scenario.--step6 .game__truck.--guep {
+  left: 11vw;
+  z-index: 1;
 }
 
-/* line 395, ../../sass/blocks/_scene.scss */
+/* line 402, ../../sass/blocks/_scene.scss */
 .game__scenario.--step7 .game__scene,
 .game__scenario.--step7 .game__mountains {
-  left: -3000px;
+  left: -2500px;
 }
-
-/* line 403, ../../sass/blocks/_scene.scss */
+/* line 407, ../../sass/blocks/_scene.scss */
+.game__scenario.--step7 .game__truck.--guep {
+  left: 100vw;
+}
+/* line 411, ../../sass/blocks/_scene.scss */
+.game__scenario.--step7 .game__truck {
+  left: 75vw;
+  z-index: 1;
+}
+/* line 415, ../../sass/blocks/_scene.scss */
+.game__scenario.--step7 .game__truck::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../../assets/img/smoke.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  bottom: -2.8vh;
+  left: 0.2vw;
+  z-index: 2;
+  animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes smoke {
+  from {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    height: 3vh;
+    width: 3vw;
+  }
+}
+/* line 447, ../../sass/blocks/_scene.scss */
 .game__scenario.--step8 .game__scene,
 .game__scenario.--step8 .game__mountains {
   left: -3500px;
 }
 
-/* line 411, ../../sass/blocks/_scene.scss */
+/* line 455, ../../sass/blocks/_scene.scss */
 .game__scenario.--step9 .game__scene,
 .game__scenario.--step9 .game__mountains {
   left: -4000px;
