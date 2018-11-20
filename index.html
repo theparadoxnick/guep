@@ -13,46 +13,40 @@
     <section class="intro">
         <div class="intro__list">
             <img class="intro__logo" src="assets/img/guep-logo.png" alt="Logo da GUEP">
-            <button class="intro__start --purple">Iniciar</button>
+            <button class="intro__start --red">Iniciar</button>
         </div>
 	</section>
     
     <section class="game__main">   
+       
         <div class="game__scenario -is-disabled">
             <div class="game__blur">
-                <p class="game__quote --step1">Oh nossa, o outro motorista terá que esperar algumas horas para ser liberado</p>
-                <p class="game__quote --step2">Pelo que estão dizendo, ele parece que está com problemas criminais...</p>
-                <p class="game__quote --step3">Com a <i>GUEP</i>, basta 3 pesquisas e o motorista já pode ser liberado!</p>
-                <p class="game__quote --step4">Tudo certo! O motorista já está apto para carregar!</p>
-                <p class="game__quote --step5">Agora é o momento da papelada, com a <i>GUEP</i> é tudo mais fácil e seguro!</p>
-                <p class="game__quote --step6">Droga, curvas perigosas!</p>
-                <p class="game__quote --step7">Acidentes acontecem, porém com a <i>GUEP</i>, tudo flui de forma simples!</p>
-                <p class="game__quote --step8">Hora do almoço! A <i>GUEP</i> tem o cuidado com as necessidades do motorista!</p>
-                <p class="game__quote --white --step9">Controle de jornada, pernoite, abastecimento, etc. Com a <i>GUEP</i>, é garantido!</p>
-                <p class="game__quote --white --step10">Tudo feito! A entrega chegou onde devia chegar!</p>
-                <p class="game__quote --white --step11">Os produtos tem assinatura de qualidade <i>GUEP!</i></p>
-                <p class="game__quote --white --step12">Obrigado por confiar na <i>GUEP</i>!</p>
+                
+                <!-- Cenário -->
+
                 <img class="game__mountains" src="assets/img/scenario-mountains.png" alt="Montanha">
                 <img class="game__scene" src="assets/img/scenario.png" alt="Cenário">
+                
+                <!-- Caminhão-->
+                
                 <div class="game__truck --concorrente">
-                    <span class="truck__animation--a">
-                        <span class="truck__animation--b">
-                            <img class="truck__structure" src="assets/img/truck-structure-gray.png" alt="Carroceria do Caminhão do Concorrente">
+                    <div class="game__truck__layer">
+                        <span class="truck__animation--a">
+                            <span class="truck__animation--b">
+                                <img class="truck__structure" src="assets/img/truck-structure-guep.png" alt="Carroceria do Caminhão da GUEP">
+                            </span>
                         </span>
-                    </span>
+                    </div>
                 </div>
-                <div class="game__truck --guep">
-                    <span class="truck__animation--a">
-                        <span class="truck__animation--b">
-                            <img class="truck__structure" src="assets/img/truck-structure-guep.png" alt="Carroceria do Caminhão da GUEP">
-                        </span>
-                    </span>
-                </div>
-            </div>
-        </div>
+            </div> <!-- Fim do Blur -->
+
+            
+        </div> <!--Fim do Cenário -->
+
     </section>
 
 	<script src="assets/js/jquery-1.12.0.min.js"></script>
-	<script src="assets/js/game.js"></script>
+    <script src="assets/js/game.js"></script>
+    
 </body>
 </html>

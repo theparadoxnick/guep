@@ -5,10 +5,10 @@
 //
 //  Exemplo de uso:
 //
-//  Para MIN-Width ( mobile first )
+//  Para min-width ( mobile first )
 //  @include tablet-p { ... }
 //
-//  Para Max-width
+//  Para max-width
 //  @include phone { ... }
 
 
@@ -60,7 +60,7 @@ $desk-width:  1420px;
 }
 
 @mixin max-tablet-l {
-  @media ( maxn-width: #{ $lap-width - 1px } ) {
+  @media ( max-width: #{ $lap-width - 1px } ) {
     @content;
   }
 }
