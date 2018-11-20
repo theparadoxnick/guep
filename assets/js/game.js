@@ -30,12 +30,10 @@ jQuery( function() {
     btn_next.on('click', function() {
 
         if (game.hasClass('--driving')) {
-            return false;
+            //return false;
         } else {
 
-            if (counter > 13 ){
-                game.addClass( '--driving' );
-                game.removeClass( '--start' ).addClass( '--end' );
+            if (counter > 12 ){
                 game.find( '.game__quote' ).each(function(){
                     jQuery( this ).removeClass( '--is-active' );
                     if (jQuery( this ).hasClass( '--' + steps[counter] )){
@@ -43,11 +41,9 @@ jQuery( function() {
                     }
                 })
                 
-                setTimeout( function() {
     
-                    game.removeClass( '--step13' ).removeClass( '--end' ).removeClass( '--driving' );
-                    
-                }, 5000 );
+                game.removeClass( '--step13' ).removeClass( '--start' ).removeClass( '-is-active' ).addClass( '-is-disabled' );
+                intro.removeClass( '-is-disabled' );
                 
                 counter = 0;
     
