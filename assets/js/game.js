@@ -25,7 +25,7 @@ jQuery( function() {
 
     var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8', 'step9','step10', 'step11','step12','step13' ],
         counter = 0,
-        btn_next = jQuery( '.game__mountains' ); 
+        btn_next = jQuery( '.game__mountains' );
 
     btn_next.on('click', function() {
 
