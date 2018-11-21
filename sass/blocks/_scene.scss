@@ -671,11 +671,26 @@
     .game__truck__layer2 {
         &:after {
             @include animation-objects;
-            background-image: url('../../assets/img/gr.png');
+            background-image: url('../../assets/img/placa-seguradora.png');
             animation: placa-gr 3s ease-in;
             animation-fill-mode: forwards;
             bottom: 28vw;
-            left: 37.4vw;
+            & {
+                left: 37.4vw;
+            }
+    
+            @include tablet-l {
+                left: 37.4vw;
+            }
+    
+            @media  screen and (min-width: 1366px) {
+                left: 30.4vw;
+            }
+    
+            @media  screen and (min-width: 1920px) {
+                left: 37.4vw;
+            }
+            
 
             @keyframes placa-gr {
                 from {
@@ -684,7 +699,7 @@
                 }
 
                 to {
-                    width: 4vw;
+                    width: 10vw;
                     height: 6vw;
                 }
 
@@ -1379,7 +1394,6 @@
     }
     
 }
-
 
 .game__scenario.--step10 {
     
