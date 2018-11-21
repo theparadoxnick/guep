@@ -115,22 +115,6 @@
     }
 }
 
-.game__scenario.--start {
-    
-    .game__typewriter {
-        
-        & {
-            position: absolute;
-            top: 5vw;
-            left: 0;
-            right: 0;
-            display: inline-block;
-            margin: 0 auto;
-            padding: 0 19vw;
-        }
-    }
-}
-
 .game__scenario.--step1 {
     
     .game__truck {
@@ -228,22 +212,224 @@
             animation-fill-mode: forwards;
             
             @keyframes cronometro {
+                
                 from {
                     width: 0;
                     height: 0;
                 }
 
                 to {
-                    width: 2vw;
-                    height: 2vw;
+                    width: 4vw;
+                    height: 4vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(3000px, 0, 0);
+                  transform: translate3d(3000px, 0, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+              }
+            
+        }
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-score.png');
+            animation: placa-score 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 17vw;
+
+            @keyframes placa-score {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
                 }
             }
-            
         }
     }
 }
 
 .game__scenario.--step2 {
+    
+    .game__truck {
+        
+        & {
+            left: 23vw;
+        }
+
+        @include tablet-l {
+            left: 32vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 19vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 23vw;
+        }
+
+        z-index: 1;
+
+        // Ṕesquisa
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/pesquisa.png');
+            bottom: 1.8vh;
+            left: 9vw;
+            animation: pesquisa 3s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes pesquisa {
+                
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                
+                to {
+                    width: 5vw;
+                    height: 8vw;
+                }
+            }
+        }
+
+        // Score 
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/score-icon.png');
+            bottom: 20vh;
+            left: 3vw;
+            width: 5vw;
+            height: 5vw;
+
+            animation: score 6s ease-in;
+            animation-fill-mode: forwards;
+            
+            @keyframes score {
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                0% {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, -3000px, 0);
+                  transform: translate3d(0, -3000px, 0);
+                }
+
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+            
+            
+        }
+    }
+
+    .game__truck__layer {
+
+        //Check
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/check.png');
+            width: 4vw;
+            height: 4vw;
+            bottom: 8vw;
+            left: 14vw;
+        }
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-score.png');
+            animation: placa-score 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 17vw;
+
+            @keyframes placa-score {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.game__scenario.--step3 {
     
     .game__truck {
         
@@ -288,7 +474,7 @@
 
         &:before {
             @include animation-objects;
-            background-image: url('../../assets/img/sinistro.png');
+            background-image: url('../../assets/img/averb-logo.png');
             bottom: 18vw;
             width: 5vw;
             height: 5vw;
@@ -319,9 +505,94 @@
             }
         }
     }
+
+    .game__truck__layer {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/sm-averb-xml.png');
+            bottom: 8vh;
+            animation: documentos 8s;
+            animation-fill-mode: forwards;
+            
+            @keyframes documentos {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 11vw;
+                    height: 7vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+            
+        }
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-embarcador.png');
+            animation: embarcador 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 12.3vw;
+
+            @keyframes embarcador {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
 }
 
-.game__scenario.--step3 {
+.game__scenario.--step4 {
     
     .game__truck {
         
@@ -343,9 +614,36 @@
 
         z-index: 1;
 
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/sm.png');
+            animation-fill-mode: forwards;
+            animation: docs-leave 5s ease-out;
+            
+            @keyframes docs-leave {
+                
+                0% {
+                    bottom: 12vw;
+                    left: 2.4vw;
+                    width: 4vw;
+                    height: 5vw;
+                    opacity: 1;
+                }
+
+                100% {
+                    width: 0;
+                    height: 0;
+                    bottom: 12vh;
+                    left: 36.4vw;
+                    opacity: 0;
+                }
+
+            }
+        }
+
         &:before {
             @include animation-objects;
-            background-image: url('../../assets/img/sinistro.png');
+            background-image: url('../../assets/img/averb-logo.png');
             animation-fill-mode: forwards;
             animation: averb-leave 5s;
             
@@ -369,39 +667,46 @@
             }
         }
     }
-}
 
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/gr.png');
+            animation: placa-gr 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 25vw;
+            left: 33.4vw;
 
+            @keyframes placa-gr {
+                from {
+                    width: 0;
+                    height: 0;
+                }
 
-.game__scenario.--step4 {
+                to {
+                    width: 4vw;
+                    height: 5vw;
+                }
 
-    .game__truck {
-        & {
-            left: 26vw;
-            z-index: 1;
-        }
-
-        &.--guep {
-            & {
-                left: 52vw;
-            }
-
-            &:after,
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            &:after {
-                left: 8vw;
-                width: 5vw;
-                height: 8vw;
-                bottom: 2.8vh;
-                left: 9vw;
-                background-image: url('../../assets/img/hand-check-phone.png');
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
             }
         }
     }
@@ -411,62 +716,608 @@
     
     .game__scene,
     .game__mountains {
-        left: -270px;
+        
+
+        & {
+            left: -76vw;
+        }
+
+        @include tablet-l {
+            left: -116vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -66vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -76vw;
+        }
     }
 
     .game__truck {
         
         & {
-            left: 66vw;
-            z-index: 1;
+            left: 53vw;
         }
 
-        &.--guep {
-            & {
-                left: 78vw;
-            }
+        @include tablet-l {
+            left: 62vw;
+        }
 
-            &:after,
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+        @media  screen and (min-width: 1366px) {
+            left: 45vw;
+        }
 
-            &:after {
-               
-                right: 6.2vw;
-                bottom: 57vh;
-                background-image: url('../../assets/img/sm-averb-xml.png');
-                animation: bounceInDown 8s;
-                animation-fill-mode: forwards;
+        @media  screen and (min-width: 1920px) {
+            left: 53vw;
+        }
+
+        z-index: 1;
+
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/app-gpmobi.png');
+            bottom: 18vw;
+            width: 5vw;
+            height: 5vw;
+            left: 2.4vw;
+            animation: gpmobi 8s;
+            animation-fill-mode: forwards;
+            
+            @keyframes gpmobi {
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                0% {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, -3000px, 0);
+                  transform: translate3d(0, -3000px, 0);
+                }
+
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+
+    .game__truck__layer {
+        
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/curva-perigosa.png');
+            bottom: 1.8vh;
+            left: 9vw;
+            animation: curva-perigosa 3s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes curva-perigosa{
                 
-                @keyframes bounceInDown {
-                    from,
-                    60%,
-                    75%,
-                    90%,
-                    to {
-                      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-                      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-                    }
-                  
-                    0% {
-                      width: 0;
-                      height: 0;
-                      opacity: 0;
-                      -webkit-transform: translate3d(0, -3000px, 0);
-                      transform: translate3d(0, -3000px, 0);
-                    }
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                
+                to {
+                    width: 5vw;
+                    height: 8vw;
+                }
+            }
+        }
 
-                    to {
-                       width: 11vw;
-                       height: 13vh;
-                      -webkit-transform: translate3d(0, 0, 0);
-                      transform: translate3d(0, 0, 0);
-                    }
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/speaker.png');
+            bottom: 8vw;
+            left: 11vw;
+            animation: speaker-montanha 6s ease-in;
+
+            @keyframes speaker-montanha {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 5vw;
+                    height: 5vw;
+                }
+            }
+        }
+    }
+
+    .game__truck__layer2 {
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-curvas-perigosas.png');
+            animation: placa-curvas 5s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 11.8vw;
+
+            @keyframes placa-curvas {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.game__scenario.--step6 {
+    
+    .game__scene,
+    .game__mountains {
+        
+
+        & {
+            left: -106vw;
+        }
+
+        @include tablet-l {
+            left: -116vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -114vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -106vw;
+        }
+    }
+
+    .game__truck {
+        
+        & {
+            left: 77vw;
+        }
+
+        @include tablet-l {
+            left: 62vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 45vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 77vw;
+        }
+
+        z-index: 1;
+    }
+
+    .game__truck__layer {
+        
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/area-indigena.png');
+            bottom: 1.8vh;
+            left: 9vw;
+            animation: area-indigena 3s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes area-indigena {
+                
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                
+                to {
+                    width: 5vw;
+                    height: 8vw;
+                }
+            }
+        }
+
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/speaker.png');
+            bottom: 8vw;
+            left: 11vw;
+            animation: speaker 6s ease-in;
+
+            @keyframes speaker {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 5vw;
+                    height: 5vw;
+                }
+            }
+        }
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-area-indigena.png');
+            animation: indigena 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 10vw;
+
+            @keyframes indigena {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.game__scenario.--step7 {
+    
+    .game__scene,
+    .game__mountains {
+        
+        & {
+            left: -146vw;
+        }
+
+        @include tablet-l {
+            left: -236vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -114vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -146vw;
+        }
+    }
+
+    .game__truck {
+        
+        & {
+            left: 77vw;
+        }
+
+        @include tablet-l {
+            left: 62vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 85vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 77vw;
+        }
+
+        z-index: 1;
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-almoco.png');
+            animation: almoco 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 10vw;
+
+            @keyframes almoco {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+
+}
+
+.game__scenario.--step8 {
+    
+    .game__scene,
+    .game__mountains {
+        
+        & {
+            left: -219vw;
+        }
+
+        @include tablet-l {
+            left: -310vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -180vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -219vw;
+        }
+    }
+    
+    .game__truck {
+        z-index: 1;
+        left: 55vw;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            z-index: 2;
+        }
+    }
+
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-pernoite.png');
+            animation: placa-pernoite 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 10vw;
+
+            @keyframes placa-pernoite {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+
+}
+
+.game__scenario.--step9 {
+    
+    .game__scene,
+    .game__mountains {
+        
+        & {
+            left: -219vw;
+        }
+
+        @include tablet-l {
+            left: -310vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -180vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -219vw;
+        }
+    }
+
+    .game__truck{
+        z-index: 1;
+        left: 75vw;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            z-index: 2;
+        }
+        
+        &:after {
+            bottom: -2.8vh;
+            left: 0.2vw;
+            background-image: url('../../assets/img/smoke.png');
+            animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            
+            @keyframes smoke {
+                from {
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                }
+                
+                to {
+                    opacity: 1;
+                    height: 3vh;
+                    width: 3vw;
+                }
+            }
+        }
+
+        &:before {
+            background-image: url('../../assets/img/caixas.png');
+            z-index: 1;
+            animation: caixas 5s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes caixas {
+                from {
+                    height: 0;
+                    width: 0;
+                    right: 7vw;
+                    bottom: 0vw;
+                }
+
+                to {
+                    right: 11vw;
+                    bottom: -2vw;
+                    width: 4vw;
+                    height: 6vh;
+                }
+            }
+
+        }
+    }
+    
+    .game__truck__layer2 {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-regulador-de-sinistro.png');
+            animation: placa-sinistro 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 10vw;
+
+            @keyframes placa-sinistro {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+                            
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+
+        &::before {
+            @include animation-objects;
+            background-image: url('../../assets/img/flash.png');
+            bottom: -16vw;
+            animation: flash 3s ease-in;
+            animation-fill-mode: forwards;
+            
+            @keyframes flash {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                
+                to {
+                    width: 10vw;
+                    height: 16vw;
                 }
             }
         }
@@ -474,26 +1325,26 @@
     
 }
 
-.game__scenario.--step6 {
+.game__scenario.--step10 {
     
     .game__scene,
     .game__mountains {
-        left: -2260px;
-    }
+        
+        & {
+            left: -219vw;
+        }
 
-    .game__truck,
-    .game__truck.--guep {
-        left: 11vw;
-        z-index: 1;
-    }
+        @include tablet-l {
+            left: -310vw;
+        }
 
-}
+        @media  screen and (min-width: 1366px) {
+            left: -180vw;
+        }
 
-.game__scenario.--step7 {
-    
-    .game__scene,
-    .game__mountains {
-        left: -2500px;
+        @media  screen and (min-width: 1920px) {
+            left: -219vw;
+        }
     }
 
     .game__truck {
@@ -621,71 +1472,7 @@
     }
 }
 
-.game__scenario.--step8 {
-
-    .game__truck {
-        z-index: 1;
-    }
-
-    .game__truck.--guep {
-        left: 80vw;
-    }
-
-    .game__truck.--concorrente {
-        left: 57vw;
-
-        &:after,
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            z-index: 2;
-        }
-
-        &:after {
-            bottom: -2.8vh;
-            left: 0.2vw;
-            background-image: url('../../assets/img/smoke.png');
-            animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            
-            @keyframes smoke {
-                from {
-                    opacity: 0;
-                    height: 0;
-                    width: 0;
-                }
-                
-                to {
-                    opacity: 1;
-                    height: 3vh;
-                    width: 3vw;
-                }
-            }
-        }
-
-        &:before {
-            content: ' ';
-            right: 11vw;
-            bottom: -2vw;
-            width: 4vw;
-            height: 6vh;
-            background-image: url('../../assets/img/caixas.png');
-            z-index: 1;
-            animation: caixas 5s ease-in;
-            animation-fill-mode: forwards;
-        }
-    }
-    
-    .game__scene,
-    .game__mountains {
-        left: -2850px;
-    }
-}
-
-.game__scenario.--step9 {
+.game__scenario.--step11 {
 
     .game__truck {
         z-index: 1;
@@ -705,7 +1492,7 @@
     }
 }
 
-.game__scenario.--step10 {
+.game__scenario.--step12 {
 
     .game__truck {
         z-index: 1;
@@ -725,7 +1512,7 @@
     }
 }
 
-.game__scenario.--step11 {
+.game__scenario.--step13 {
 
     .game__truck {
         z-index: 1;
@@ -757,7 +1544,7 @@
     }
 }
 
-.game__scenario.--step12 {
+.game__scenario.--step14 {
 
     .game__truck {
         z-index: 1;
@@ -777,7 +1564,7 @@
     }
 }
 
-.game__scenario.--step13 {
+.game__scenario.--step15 {
     
     &:after {
         content: ' ';
