@@ -672,10 +672,10 @@
         &:after {
             @include animation-objects;
             background-image: url('../../assets/img/gr.png');
-            animation: placa-gr 6s ease-in;
+            animation: placa-gr 3s ease-in;
             animation-fill-mode: forwards;
-            bottom: 25vw;
-            left: 33.4vw;
+            bottom: 28vw;
+            left: 37.4vw;
 
             @keyframes placa-gr {
                 from {
@@ -685,7 +685,7 @@
 
                 to {
                     width: 4vw;
-                    height: 5vw;
+                    height: 6vw;
                 }
 
                 from,
@@ -1261,6 +1261,28 @@
         }
     }
     
+    .game__truck__layer {
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/nfe.png');
+            animation: nota-fiscal 2s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 5vw;
+
+            @keyframes nota-fiscal {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+
+                to {
+                    height: 5vw;
+                    width: 5vw;
+                }
+            }
+        }
+    }
+
     .game__truck__layer2 {
         &:after {
             @include animation-objects;
@@ -1325,141 +1347,69 @@
     
 }
 
+
+
+
+
 .game__scenario.--step10 {
     
     .game__scene,
     .game__mountains {
         
         & {
-            left: -219vw;
+            left: -274vw;
         }
 
         @include tablet-l {
-            left: -310vw;
+            left: -390vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: -180vw;
+            left: -228vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -219vw;
+            left: -274vw;
         }
     }
 
     .game__truck {
+        
+        & {
+            left: 72vw;
+        }
+
+        @include tablet-l {
+            left: 75vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 72vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 72vw;
+        }
+
         z-index: 1;
     }
-    .game__truck.--guep {
-        left: 76vw;
 
-        &:after,
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            z-index: 2;
-        }
-
+    .game__truck__layer2 {
         &:after {
-            bottom: -2.8vh;
-            left: 0.2vw;
-            background-image: url('../../assets/img/smoke.png');
-            animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            
-            @keyframes smoke {
-                from {
-                    opacity: 0;
-                    height: 0;
-                    width: 0;
-                }
-                
-                to {
-                    opacity: 1;
-                    height: 3vh;
-                    width: 3vw;
-                }
-            }
-        }
-
-        &:before {
-            left: 8vw;
-            width: 5vw;
-            height: 8vw;
-            bottom: 2.8vh;
-            left: 9vw;
+            @include animation-objects;
+            background-image: url('../../assets/img/carga.png');
             z-index: -1;
-            background-image: url('../../assets/img/hand-check-phone.png');
-            animation: interation 3s ease-in;
+            animation: carga-transporte 5s ease-in;
             animation-fill-mode: forwards;
             
-            @keyframes interation {
-                
-                from {
-                    width: 0;
-                    height: 0;
-                }
-                
-                to {
-                    width: 5vw;
-                    height: 8vw;
-                }
-            }
-        }
-    }
-
-    .game__truck.--concorrente {
-        left: 75vw;
-
-        &:after,
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            z-index: 2;
-        }
-        
-        &:after {
-            bottom: -2.8vh;
-            left: 0.2vw;
-            background-image: url('../../assets/img/smoke.png');
-            animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            
-            @keyframes smoke {
-                from {
-                    opacity: 0;
-                    height: 0;
-                    width: 0;
-                }
-                
-                to {
-                    opacity: 1;
-                    height: 3vh;
-                    width: 3vw;
-                }
-            }
-        }
-
-        &:before {
-            background-image: url('../../assets/img/caixas.png');
-            z-index: 1;
-            animation: caixas 5s ease-in;
-            animation-fill-mode: forwards;
-
-            @keyframes caixas {
+            @keyframes carga-transporte {
                 from {
                     height: 0;
                     width: 0;
                     right: 7vw;
                     bottom: 0vw;
                 }
-
+                
                 to {
                     right: 11vw;
                     bottom: -2vw;
@@ -1467,153 +1417,94 @@
                     height: 6vh;
                 }
             }
-
         }
     }
+
+
 }
 
 .game__scenario.--step11 {
-
-    .game__truck {
-        z-index: 1;
-    }
-
-    .game__truck.--concorrente {
-        left: -12vw;
-    }
-
-    .game__truck.--guep {
-        left: 46vw;
-    }
     
     .game__scene,
     .game__mountains {
-        left: -4390px;
-    }
-}
-
-.game__scenario.--step12 {
-
-    .game__truck {
-        z-index: 1;
-    }
-
-    .game__truck.--concorrente {
-        left: -12vw;
-    }
-
-    .game__truck.--guep {
-        left: 46vw;
-    }
-    
-    .game__scene,
-    .game__mountains {
-        left: -5630px;
-    }
-}
-
-.game__scenario.--step13 {
-
-    .game__truck {
-        z-index: 1;
-    }
-
-    .game__truck.--concorrente {
-        left: -12vw;
-    }
-
-    .game__truck.--guep {
-        left: 78vw;
-
-        &:after {
-            display: block;
-            content: ' ';
-            position: absolute;
-            width: 6vw;
-            height: 8vw;
-            bottom: 2.8vh;
-            left: 9vw;
-            background-image: url('../../assets/img/hand-signature-guep.png');
+        
+        & {
+            left: -293vw;
         }
 
-    }
-    
-    .game__scene,
-    .game__mountains {
-        left: -5630px;
-    }
-}
-
-.game__scenario.--step14 {
-
-    .game__truck {
-        z-index: 1;
-    }
-
-    .game__truck.--concorrente {
-        left: -12vw;
-    }
-
-    .game__truck.--guep {
-        left: 100vw;
-    }
-    
-    .game__scene,
-    .game__mountains {
-        left: -5630px;
-    }
-}
-
-.game__scenario.--step15 {
-    
-    &:after {
-        content: ' ';
-        background-size: cover;
-        background-position: center;
-        background-image: url('../../assets/img/guep-favicon.png');
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 50%;
-
-        animation: 2s opacity-logo ease-in;
-        animation-fill-mode: forwards;
-
-        @keyframes opacity-logo {
-            from {
-                opacity: 0;
-                height: 0;
-                width: 0;
-            }
-
-            to {
-                width: 10vw;
-                height: 16vh;
-            }
+        @include tablet-l {
+            left: -410vw;
         }
 
-    }
+        @media  screen and (min-width: 1366px) {
+            left: -237vw;
+        }
 
-    .game__blur {
-        transition: filter 3s ease-in;
-        filter: blur(100px);
+        @media  screen and (min-width: 1920px) {
+            left: -293vw;
+        }
     }
 
     .game__truck {
+        
+        & {
+            left: 80vw;
+        }
+
+        @include tablet-l {
+            left: 82vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 82vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 80vw;
+        }
+
         z-index: 1;
     }
 
-    .game__truck.--concorrente {
-        left: -12vw;
-    }
-
-    .game__truck.--guep {
-        left: 100vw;
-    }
-    
-    .game__scene,
-    .game__mountains {
-        left: -5630px;
+    .game__truck__layer2 {
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-comprador.png');
+            animation: placa-score 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 17vw;
+        
+            @keyframes placa-score {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+        
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+        
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
     }
 }
