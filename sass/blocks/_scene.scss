@@ -1381,20 +1381,17 @@
 }
 
 
-
-
-
 .game__scenario.--step10 {
     
     .game__scene,
     .game__mountains {
         
         & {
-            left: -274vw;
+            left: -244vw;
         }
 
         @include tablet-l {
-            left: -390vw;
+            left: -244vw;
         }
 
         @media  screen and (min-width: 1366px) {
@@ -1402,7 +1399,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -274vw;
+            left: -244vw;
         }
     }
 
@@ -1462,7 +1459,7 @@
     .game__mountains {
         
         & {
-            left: -293vw;
+            left: -253vw;
         }
 
         @include tablet-l {
@@ -1474,7 +1471,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -293vw;
+            left: -253vw;
         }
     }
 

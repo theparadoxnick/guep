@@ -1566,59 +1566,59 @@ p {
     height: 16vw;
   }
 }
-/* line 1392, ../../sass/blocks/_scene.scss */
+/* line 1389, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__scene,
 .game__scenario.--step10 .game__mountains {
-  left: -274vw;
+  left: -244vw;
 }
 @media (min-width: 910px) {
-  /* line 1389, ../../sass/blocks/_scene.scss */
+  /* line 1386, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__scene,
   .game__scenario.--step10 .game__mountains {
-    left: -390vw;
+    left: -244vw;
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 1389, ../../sass/blocks/_scene.scss */
+  /* line 1386, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__scene,
   .game__scenario.--step10 .game__mountains {
     left: -228vw;
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 1389, ../../sass/blocks/_scene.scss */
+  /* line 1386, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__scene,
   .game__scenario.--step10 .game__mountains {
-    left: -274vw;
+    left: -244vw;
   }
 }
-/* line 1409, ../../sass/blocks/_scene.scss */
+/* line 1406, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck {
   z-index: 1;
 }
-/* line 1411, ../../sass/blocks/_scene.scss */
+/* line 1408, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck {
   left: 72vw;
 }
 @media (min-width: 910px) {
-  /* line 1409, ../../sass/blocks/_scene.scss */
+  /* line 1406, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__truck {
     left: 75vw;
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 1409, ../../sass/blocks/_scene.scss */
+  /* line 1406, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__truck {
     left: 72vw;
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 1409, ../../sass/blocks/_scene.scss */
+  /* line 1406, ../../sass/blocks/_scene.scss */
   .game__scenario.--step10 .game__truck {
     left: 72vw;
   }
 }
-/* line 1431, ../../sass/blocks/_scene.scss */
+/* line 1428, ../../sass/blocks/_scene.scss */
 .game__scenario.--step10 .game__truck__layer2:after {
   content: '';
   display: block;
@@ -1644,59 +1644,59 @@ p {
     height: 6vh;
   }
 }
-/* line 1464, ../../sass/blocks/_scene.scss */
+/* line 1461, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__scene,
 .game__scenario.--step11 .game__mountains {
-  left: -293vw;
+  left: -253vw;
 }
 @media (min-width: 910px) {
-  /* line 1461, ../../sass/blocks/_scene.scss */
+  /* line 1458, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__scene,
   .game__scenario.--step11 .game__mountains {
     left: -410vw;
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 1461, ../../sass/blocks/_scene.scss */
+  /* line 1458, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__scene,
   .game__scenario.--step11 .game__mountains {
     left: -237vw;
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 1461, ../../sass/blocks/_scene.scss */
+  /* line 1458, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__scene,
   .game__scenario.--step11 .game__mountains {
-    left: -293vw;
+    left: -253vw;
   }
 }
-/* line 1481, ../../sass/blocks/_scene.scss */
+/* line 1478, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck {
   z-index: 1;
 }
-/* line 1483, ../../sass/blocks/_scene.scss */
+/* line 1480, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck {
   left: 80vw;
 }
 @media (min-width: 910px) {
-  /* line 1481, ../../sass/blocks/_scene.scss */
+  /* line 1478, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__truck {
     left: 82vw;
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 1481, ../../sass/blocks/_scene.scss */
+  /* line 1478, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__truck {
     left: 82vw;
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 1481, ../../sass/blocks/_scene.scss */
+  /* line 1478, ../../sass/blocks/_scene.scss */
   .game__scenario.--step11 .game__truck {
     left: 80vw;
   }
 }
-/* line 1503, ../../sass/blocks/_scene.scss */
+/* line 1500, ../../sass/blocks/_scene.scss */
 .game__scenario.--step11 .game__truck__layer2:before {
   content: '';
   display: block;
