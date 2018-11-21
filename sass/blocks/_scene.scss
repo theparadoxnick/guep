@@ -120,7 +120,7 @@
     .game__truck {
         
         & {
-            left: 23vw;
+            left: 20vw;
         }
 
         @include tablet-l {
@@ -132,7 +132,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 23vw;
+            left: 20vw;
         }
 
         z-index: 1;
@@ -295,7 +295,7 @@
     .game__truck {
         
         & {
-            left: 23vw;
+            left: 20vw;
         }
 
         @include tablet-l {
@@ -307,7 +307,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 23vw;
+            left: 20vw;
         }
 
         z-index: 1;
@@ -434,7 +434,7 @@
     .game__truck {
         
         & {
-            left: 53vw;
+            left: 45vw;
         }
 
         @include tablet-l {
@@ -446,7 +446,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 53vw;
+            left: 45vw;
         }
 
         z-index: 1;
@@ -597,7 +597,7 @@
     .game__truck {
         
         & {
-            left: 53vw;
+            left: 45vw;
         }
 
         @include tablet-l {
@@ -609,7 +609,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 53vw;
+            left: 45vw;
         }
 
         z-index: 1;
@@ -738,7 +738,7 @@
     .game__truck {
         
         & {
-            left: 53vw;
+            left: 45vw;
         }
 
         @include tablet-l {
@@ -750,7 +750,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 53vw;
+            left: 45vw;
         }
 
         z-index: 1;
@@ -903,7 +903,7 @@
     .game__truck {
         
         & {
-            left: 77vw;
+            left: 60vw;
         }
 
         @include tablet-l {
@@ -915,7 +915,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 77vw;
+            left: 60vw;
         }
 
         z-index: 1;
@@ -1034,7 +1034,7 @@
     .game__truck {
         
         & {
-            left: 77vw;
+            left: 62vw;
         }
 
         @include tablet-l {
@@ -1046,7 +1046,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 77vw;
+            left: 62vw;
         }
 
         z-index: 1;
@@ -1119,8 +1119,24 @@
     }
     
     .game__truck {
+        
+        & {
+            left: 28vw;
+        }
+
+        @include tablet-l {
+            left: 28vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 67vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 28vw;
+        }
+
         z-index: 1;
-        left: 55vw;
 
         &:after,
         &:before {
@@ -1203,6 +1219,23 @@
     .game__truck{
         z-index: 1;
         left: 75vw;
+
+        & {
+            left: 55vw;
+        }
+
+        @include tablet-l {
+            left: 55vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 84vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 55vw;
+        }
+
 
         &:after,
         &:before {
