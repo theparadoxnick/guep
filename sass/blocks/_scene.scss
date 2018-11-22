@@ -1308,6 +1308,107 @@
 
         }
     }
+}
+
+.game__scenario.--step10 {
+    
+    .game__scene,
+    .game__mountains {
+        
+        & {
+            left: -219vw;
+        }
+
+        @include tablet-l {
+            left: -310vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -180vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -219vw;
+        }
+    }
+
+    .game__truck{
+        z-index: 1;
+        left: 75vw;
+
+        & {
+            left: 55vw;
+        }
+
+        @include tablet-l {
+            left: 55vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 84vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 55vw;
+        }
+
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            z-index: 2;
+        }
+        
+        &:after {
+            bottom: -2.8vh;
+            left: 0.2vw;
+            background-image: url('../../assets/img/smoke.png');
+            animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            
+            @keyframes smoke {
+                from {
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                }
+                
+                to {
+                    opacity: 1;
+                    height: 3vh;
+                    width: 3vw;
+                }
+            }
+        }
+
+        &:before {
+            background-image: url('../../assets/img/caixas.png');
+            z-index: 1;
+            animation: caixas 5s ease-in;
+            animation-fill-mode: forwards;
+
+            @keyframes caixas {
+                from {
+                    height: 0;
+                    width: 0;
+                    right: 7vw;
+                    bottom: 0vw;
+                }
+
+                to {
+                    right: 11vw;
+                    bottom: -2vw;
+                    width: 4vw;
+                    height: 6vh;
+                }
+            }
+
+        }
+    }
     
     .game__truck__layer {
         &:after {
@@ -1395,7 +1496,7 @@
     
 }
 
-.game__scenario.--step10 {
+.game__scenario.--step11 {
     
     .game__scene,
     .game__mountains {
@@ -1467,7 +1568,7 @@
 
 }
 
-.game__scenario.--step11 {
+.game__scenario.--step12 {
     
     .game__scene,
     .game__mountains {
