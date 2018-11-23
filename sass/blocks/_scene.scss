@@ -122,7 +122,7 @@
     .game__truck {
         
         & {
-            left: 20vw;
+            left: 23vw;
         }
 
         @include tablet-l {
@@ -134,7 +134,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 20vw;
+            left: 23vw;
         }
 
         z-index: 1;
@@ -296,10 +296,17 @@
 
 .game__scenario.--step2 {
     
+    &.--driving .truck__animation--a::after,
+    &.--driving .truck__animation--a::before,
+    &.--driving .truck__animation--b::after,
+    &.--driving .truck__animation--b::before {
+        animation: none;
+    }
+
     .game__truck {
         
         & {
-            left: 20vw;
+            left: 23vw;
         }
 
         @include tablet-l {
@@ -311,7 +318,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 20vw;
+            left: 23vw;
         }
 
         z-index: 1;
@@ -440,7 +447,7 @@
     .game__truck {
         
         & {
-            left: 45vw;
+            left: 53vw;
         }
 
         @include tablet-l {
@@ -452,7 +459,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 45vw;
+            left: 53vw;
         }
 
         z-index: 1;
@@ -604,10 +611,17 @@
 
 .game__scenario.--step4 {
     
+    &.--driving .truck__animation--a::after,
+    &.--driving .truck__animation--a::before,
+    &.--driving .truck__animation--b::after,
+    &.--driving .truck__animation--b::before {
+        animation: none;
+    }
+
     .game__truck {
         
         & {
-            left: 45vw;
+            left: 53vw;
         }
 
         @include tablet-l {
@@ -619,7 +633,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 45vw;
+            left: 53vw;
         }
 
         z-index: 1;
@@ -689,7 +703,7 @@
             animation-fill-mode: forwards;
             bottom: 28vw;
             & {
-                left: 37.4vw;
+                left: 34.4vw;
             }
     
             @include tablet-l {
@@ -701,7 +715,7 @@
             }
     
             @media  screen and (min-width: 1920px) {
-                left: 37.4vw;
+                left: 34.4vw;
             }
             
 
@@ -747,7 +761,7 @@
         
 
         & {
-            left: -76vw;
+            left: -84vw;
         }
 
         @include tablet-l {
@@ -759,7 +773,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -76vw;
+            left: -84vw;
         }
     }
 
@@ -935,7 +949,7 @@
     .game__truck {
         
         & {
-            left: 60vw;
+            left: 70vw;
         }
 
         @include tablet-l {
@@ -947,7 +961,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 60vw;
+            left: 70vw;
         }
 
         z-index: 1;
@@ -1069,7 +1083,7 @@
     .game__truck {
         
         & {
-            left: 62vw;
+            left: 84vw;
         }
 
         @include tablet-l {
@@ -1081,7 +1095,7 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 62vw;
+            left: 84vw;
         }
 
         z-index: 1;
@@ -1143,7 +1157,7 @@
     .game__mountains {
         
         & {
-            left: -219vw;
+            left: -269vw;
         }
 
         @include tablet-l {
@@ -1155,26 +1169,26 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -219vw;
+            left: -269vw;
         }
     }
     
     .game__truck {
         
         & {
-            left: 28vw;
+            left: 4vw;
         }
 
         @include tablet-l {
-            left: 28vw;
+            left: 2vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: 67vw;
+            left: 5vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 28vw;
+            left: 4vw;
         }
 
         z-index: 1;
@@ -1247,7 +1261,7 @@
     .game__mountains {
         
         & {
-            left: -219vw;
+            left: -269vw;
         }
 
         @include tablet-l {
@@ -1259,28 +1273,27 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -219vw;
+            left: -269vw;
         }
     }
 
     .game__truck{
         z-index: 1;
-        left: 75vw;
 
         & {
-            left: 55vw;
+            left: 40vw;
         }
 
         @include tablet-l {
-            left: 55vw;
+            left: 42vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: 84vw;
+            left: 40vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 55vw;
+            left: 40vw;
         }
 
 
@@ -1350,11 +1363,18 @@
         background-color: $night;
     }
 
+    &.--driving .truck__animation--a::after,
+    &.--driving .truck__animation--a::before,
+    &.--driving .truck__animation--b::after,
+    &.--driving .truck__animation--b::before {
+        animation: none;
+    }
+
     .game__scene,
     .game__mountains {
         
         & {
-            left: -219vw;
+            left: -269vw;
         }
 
         @include tablet-l {
@@ -1366,28 +1386,27 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -219vw;
+            left: -269vw;
         }
     }
 
     .game__truck{
         z-index: 1;
-        left: 75vw;
 
         & {
-            left: 55vw;
+            left: 40vw;
         }
 
         @include tablet-l {
-            left: 55vw;
+            left: 42vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: 84vw;
+            left: 40vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 55vw;
+            left: 40vw;
         }
 
 
@@ -1407,7 +1426,6 @@
             left: 0.2vw;
             background-image: url('../../assets/img/smoke.png');
             animation: smoke 8s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            will-change: animation;
             
             @keyframes smoke {
                 from {
@@ -1550,7 +1568,7 @@
     .game__mountains {
         
         & {
-            left: -244vw;
+            left: -288vw;
         }
 
         @include tablet-l {
@@ -1562,26 +1580,26 @@
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -244vw;
+            left: -288vw;
         }
     }
 
     .game__truck {
         
         & {
-            left: 72vw;
+            left: 62vw
         }
 
         @include tablet-l {
-            left: 75vw;
+            left: 63vw
         }
 
         @media  screen and (min-width: 1366px) {
-            left: 72vw;
+            left: 63vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: 72vw;
+            left: 62vw;
         }
 
         z-index: 1;
@@ -1628,19 +1646,19 @@
     .game__mountains {
         
         & {
-            left: -253vw;
+            left: -288vw;
         }
 
         @include tablet-l {
-            left: -410vw;
+            left: -244vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: -237vw;
+            left: -228vw;
         }
 
         @media  screen and (min-width: 1920px) {
-            left: -253vw;
+            left: -288vw;
         }
     }
 
@@ -1651,11 +1669,11 @@
         }
 
         @include tablet-l {
-            left: 82vw;
+            left: 80vw;
         }
 
         @media  screen and (min-width: 1366px) {
-            left: 82vw;
+            left: 80vw;
         }
 
         @media  screen and (min-width: 1920px) {
@@ -1663,6 +1681,128 @@
         }
 
         z-index: 1;
+    }
+
+    .game__truck__layer2 {
+        &:before {
+            @include animation-objects;
+            background-image: url('../../assets/img/placa-comprador.png');
+            will-change: animation;
+            animation: placa-score 6s ease-in;
+            animation-fill-mode: forwards;
+            bottom: 17vw;
+        
+            @keyframes placa-score {
+                from {
+                    width: 0;
+                    height: 0;
+                }
+        
+                to {
+                    width: 10vw;
+                    height: 6vw;
+                }
+        
+                from,
+                60%,
+                75%,
+                90%,
+                to {
+                  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              
+                from {
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 3000px, 0);
+                  transform: translate3d(0, 3000px, 0);
+                }
+              
+                to {
+                  -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.game__scenario.--step13 {
+    
+    & {
+        transition: background-color 1s ease-in;
+        background-color: $night;
+    }
+
+    &.--driving .truck__animation--a::after,
+    &.--driving .truck__animation--a::before,
+    &.--driving .truck__animation--b::after,
+    &.--driving .truck__animation--b::before {
+        animation: none;
+    }
+
+    .game__scene,
+    .game__mountains {
+        
+        & {
+            left: -288vw;
+        }
+
+        @include tablet-l {
+            left: -244vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: -228vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: -288vw;
+        }
+    }
+
+    .game__truck {
+        
+        & {
+            left: 80vw;
+        }
+
+        @include tablet-l {
+            left: 80vw;
+        }
+
+        @media  screen and (min-width: 1366px) {
+            left: 80vw;
+        }
+
+        @media  screen and (min-width: 1920px) {
+            left: 80vw;
+        }
+
+        z-index: 1;
+
+        &:after {
+            @include animation-objects;
+            background-image: url('../../assets/img/hand-signature-guep.png');
+            bottom: 1.8vh;
+            left: 9vw;
+            will-change: animation;
+            animation: signature 6s ease-in;
+            animation-fill-mode: forwards; 
+            
+            @keyframes signature {
+                
+                from {
+                    width: 0;
+                    height: 0;
+                }
+                
+                to {
+                    width: 5vw;
+                    height: 8vw;
+                }
+            }
+        }
     }
 
     .game__truck__layer2 {

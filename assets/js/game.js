@@ -23,7 +23,7 @@ jQuery( function() {
         return false;
     });
 
-    var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8', 'step9','step10', 'step11', 'step12' ],
+    var steps = [ 'step1','step2','step3','step4','step5','step6','step7','step8', 'step9','step10', 'step11', 'step12', 'step13' ],
         counter = 0,
         btn_next = jQuery( '.game__mountains' );
 
@@ -33,7 +33,7 @@ jQuery( function() {
             //return false;
         } else {
 
-            if (counter > 11 ){
+            if (counter > 12 ){
                 game.find( '.game__quote' ).each(function(){
                     jQuery( this ).removeClass( '--is-active' );
                     if (jQuery( this ).hasClass( '--' + steps[counter] )){
@@ -42,7 +42,7 @@ jQuery( function() {
                 })
                 
     
-                game.removeClass( '--step12' ).removeClass( '--start' ).removeClass( '-is-active' ).addClass( '-is-disabled' );
+                game.removeClass( '--step13' ).removeClass( '--start' ).removeClass( '-is-active' ).addClass( '-is-disabled' );
                 intro.removeClass( '-is-disabled' );
                 
                 counter = 0;
@@ -65,7 +65,7 @@ jQuery( function() {
     
                         game.removeClass( '--driving' );
                         
-                    }, 5000 );
+                    }, 3000 );
     
                 } else {
                     game.addClass ( '--driving' );
@@ -82,7 +82,7 @@ jQuery( function() {
     
                         game.removeClass( '--driving' );
                         
-                    }, 5000 );
+                    }, 3000 );
     
                 }
                 
